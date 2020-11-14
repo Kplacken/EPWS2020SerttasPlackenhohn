@@ -15,6 +15,7 @@ Mail: eda_nur.serttas@smail.th-koeln.de
 Kimberly Maria Plackenhohn
 Matrikelnummer: 11133350
 Mail: kimberly_maria.plackenhohn@smail.th-koeln.de
+
 Betreut durch: Uwe Müsse
 
 Titel: Stress im Alltag
