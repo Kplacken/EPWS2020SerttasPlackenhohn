@@ -5,7 +5,7 @@ Dieses Dokument wurde von Kimberly Maria Plackenhohn und Eda Nur Serttas erstell
 
 Für weitere Aufgaben wird in unserem GitHub ein Wiki angelegt.
 
-#Exposé
+## Exposé
 
 
 Eda Nur Serttas
