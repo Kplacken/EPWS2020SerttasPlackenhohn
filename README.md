@@ -28,7 +28,7 @@ Wie man schon anhand der Quelle sieht, gibt es zu viele Menschen die an Stress l
 Stress wirkt sich negativ auf den Körper aus und kann sogar gesundheitliche Auswirkungen haben. Stress kann zu Krankheiten eine zusätzliche Belastung sein. 
 Stress kann nicht nur gesundheitliche Auswirkungen haben, Stress kann auch zur Erschöpfung führen. Laut der Quelle https://www.laif900balance.de/symptome/chronischer-stress/, sind erhöhter Puls, Verspannungen, Kopf- und Rückenschmerzen, innere Unruhe, Konzentrationsstörungen und gesteigerte Reizbarkeit typische Stresssymptome. 
 
-Mit Hilfe unseres Systems, soll all dies reduziert werden.
+Mit Hilfe unseres Systems soll all dies reduziert werden.
 
 #### Vorgehenseweise:
 Mit der Anmeldung in unserer App wählt der Benutzer eine der 4 Kategorien (Schüler, Student, Angestellter, Anderweitig) aus. Dadurch öffnet sich eine personalisierte Ansicht, in dem der Benutzer seine Arbeits-, Uni- und Schulzeiten angeben kann. Durch die Angaben der Zeiten kann der Benutzer 3x täglich, z.B. Morgens, Mittags, Abends benachrichtigt werden. Der Nutzer soll erinnert werden, ausreichend Wasser zu trinken und zwischendurch eine kleine Pause einzulegen und eine Atemübung zu machen. Auf Wunsch kann der Nutzer auch weitere Entspannungsmethoden wie Musik hören, Hörbücher oder andere Entspannungsübungen auswählen.
