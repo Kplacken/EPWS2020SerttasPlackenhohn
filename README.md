@@ -23,12 +23,12 @@ Betreut durch: Uwe Müsse
 #### Problemraum:
 Stress im Alltag? Wer kennt’s nicht. Mit unserem System werden wir euren Alltag erleichtern und euch zum Entspannen bringen. 
 ` Laut einer großangelegten Umfrage der Techniker Krankasse leiden in Deutschland mehr als drei Viertel der Erwachsenenbevölkerung zumindest gelegentlich unter Stress - ein knappes Viertel sogar häufig. `
-##### Quelle: https://de.statista.com/themen/236/stress/#:~:text=Laut%20einer%20gro%C3%9Fangelegten%20Umfrage%20der,betroffen%20zu%20sein%20als%20M%C3%A4nner
+###### Quelle: https://de.statista.com/themen/236/stress/#:~:text=Laut%20einer%20gro%C3%9Fangelegten%20Umfrage%20der,betroffen%20zu%20sein%20als%20M%C3%A4nner
 
 ` Die häufigsten Auswirkungen von Stress bei der Arbeit sind Anspannung (57 Prozent), Unruhe (44 Prozent) und Schlafstörungen (40 Prozent).Zu diesem Ergebnis kommt eine repräsentative Umfrage des Marktforschungsinstituts Yougov im Auftrag der Karriereplattform Linkedin. Die Folgen von Stress am Arbeitsplatz spüren laut Studie 82 Prozent der deutschen Arbeitnehmer. Frauen seien häufiger von negativen Auswirkungen der Arbeit betroffen als Männer, zeigt die Befragung. `
 ###### Quelle: https://www.wuv.de/karriere/stress_und_die_folgen_leider_noch_immer_tabu
 
-Wie man schon anhand der Quelle sieht, gibt es zu viele Menschen die an Stress leiden. Stress kann verschiedene Ursachen haben. Dieser kann z.B. durch die Familie verursacht werden, aber auch durch seinen Beruf, Schule oder das Studium. Auch durch verschiedene Krankheiten, kann es dazu kommen, dass ein Mensch unter Stress leidet. Stress wirkt sich negativ auf den Körper aus und kann sogar gesundheitliche Auswirkungen haben. Außerdem kann Stress zu Krankheiten eine zusätzliche Belastung sein. Stress kann nicht nur gesundheitliche Auswirkungen haben, sondern auch zur Erschöpfung führen. Laut der Quelle https://www.laif900balance.de/symptome/chronischer-stress/, sind erhöhter Puls, Verspannungen, Kopf- und Rückenschmerzen, innere Unruhe, Konzentrationsstörungen und gesteigerte Reizbarkeit typische Stresssymptome.
+Wie man schon anhand der Quelle sieht, gibt es zu viele Menschen die an Stress leiden. Stress kann verschiedene Ursachen haben. Dieser kann z.B. durch die Familie verursacht werden, aber auch durch seinen Beruf, Schule oder das Studium. Auch durch verschiedene Krankheiten, kann es dazu kommen, dass ein Mensch unter Stress leidet. Stress wirkt sich negativ auf den Körper aus und kann sogar gesundheitliche Auswirkungen haben. Außerdem kann Stress zu Krankheiten eine zusätzliche Belastung sein. Stress kann nicht nur gesundheitliche Auswirkungen haben, sondern auch zur Erschöpfung führen. Laut der **Quelle https://www.laif900balance.de/symptome/chronischer-stress/**, sind erhöhter Puls, Verspannungen, Kopf- und Rückenschmerzen, innere Unruhe, Konzentrationsstörungen und gesteigerte Reizbarkeit typische Stresssymptome.
 
 Mit Hilfe unseres Systems soll all dies reduziert werden.
 
