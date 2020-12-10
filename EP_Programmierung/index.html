@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projekt im Modul Entwicklungsprojekt</title>
+  <link rel="stylesheet" href="./src/styles/main.css">
+</head>
+
+<header class="main-header">
+  </div>
+  <h3 class="main-header__title">Life´s Good</h3>
+</header>
+
+<body>
+  <div class="main">
+    <main class="main__content">
+      <table>
+        <tr>
+          <section class="login">
+            <div class="login__content">
+              <h1 class="main__content__title">Anmelden</h1>
+              <form action="?login=1" method="post">
+                <label class="text__mail" for="mail"> E-Mail-Adresse:</label>
+                <input type="email" class="email" placeholder="Deine E-Mail-Adresse"> 
+                <label class="text__passw" for="passw"> Passwort:</label>
+                <input type="password" class="passwort" placeholder="Dein Passwort">
+                <input type="submit" class="anmelden" value="Anmelden">
+              </form>
+              <input type="submit" value="Account erstellen" class="account_erstellen" id="buttonOpen"
+                onclick="openOverlay('overlay')">
+            </div>
+          </section>
+        </tr>
+        <div id="overlay" class="main__overlay">
+          <div class="overlay__content">
+            <section class="overlay_section">
+              <h3 class="ueberschrift">Account erstellen</h3>
+              <form action="?register=1" method="post">
+                <label class="text__mail__overlay" for="mail"> E-Mail-Adresse:</label>
+                <input type="email" class="email__overlay" name="email1" placeholder="E-Mail-Adresse">
+                <label class="text__passw__overlay" for="passwort1"> Passwort:</label>
+                <input type="password" class="passwd__overlay" name="passwort1" placeholder="Passwort">
+                <label class="text__passw__overlay__wdh" for="passwort"> Passwort wiederholen:</label>
+                <input type="password" class="passwd__wdh__overlay" name="passwort2" placeholder="Passwort wiederholen">
+                <input type="submit" class="abschicken__overlay" value="Abschicken">
+            </form>
+            </section>
+          <button class="button" id="buttonClose" onclick="closeOverlay('overlay')">X</a>
+          </div>
+        </div>
+      </table>
+    </main>
+  </div>
+  <script src="./src/js/overlay.js"></script>
+</body>
