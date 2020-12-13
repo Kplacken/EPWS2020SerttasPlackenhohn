@@ -1,0 +1,40 @@
+{
+  "name": "EPWS2020SerttasPlackenhohn",
+  "version": "1.0.0",
+  "description": "Projekt im Modul Entwicklungsprojekt",
+  "main": "index.js",
+  "scripts": {
+    "dev:css": "node-sass --source-map true src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch:sass": "node-sass --source-map true --watch src/styles/scss src/styles/scss/main.scss -o src/styles/",
+    "watch": "npm-run-all --parallel dev:css watch:*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "//": " --- GENERIC --- ",
+    "build:clean": "npm run clean && npm run mkdirs",
+    "build:copy": "npm run copy",
+    "build:css": "node-sass --include-path src/styles/scss src/styles/scss/main.scss dist/styles/main.css --output-style compressed",
+    "build": "npm run build:clean && npm run build:copy && npm run build:css",
+    "clean": "rimraf dist",
+    "mkdirs": "npx mkdirp -p dist/js && npx mkdirp -p dist/styles && npx mkdirp -p dist/assets",
+    "copy:assets": "cp -r src/assets/* dist/assets/",
+    "copy:html": "node helper/copy-html.js .html",
+    "copy": "npm run copy:assets && npm run copy:html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kplacken/EPWS2020SerttasPlackenhohn.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kplacken/EPWS2020SerttasPlackenhohn/issues"
+  },
+  "homepage": "https://github.com/Kplacken/EPWS2020SerttasPlackenhohn#readme",
+  "devDependencies": {
+    "findit": "^2.0.0",
+    "mkdirp": "^1.0.4",
+    "node-sass": "^4.14.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2"
+  },
+  "dependencies": {}
+}
