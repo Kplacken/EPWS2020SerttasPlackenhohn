@@ -21,8 +21,28 @@
 		margin-bottom: 1.33em;
 		font-weight: bold;
 	  }
+	
+	  h4 {
+		display: block;
+		font-size: 1em;
+		margin-top: 1.33em;
+		margin-bottom: 1.33em;
+		margin-left: 0;
+		margin-right: 0;
+		font-weight: bold;
+	  }
 
-  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h2, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+	  h5 {
+		display: block;
+		font-size: .83em;
+		margin-top: 1.67em;
+		margin-bottom: 1.67em;
+		margin-left: 0;
+		margin-right: 0;
+		font-weight: bold;
+	  }
+
+  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h2, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin:0;
     padding:0;
     border:0;
@@ -41,7 +61,7 @@
     list-style: none;
   }
   
-  body, button, input, select {
+  body, input, select {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:14px;
     line-height:18px;
@@ -98,6 +118,7 @@
   }
 
 /******* HAMBURGER MENU ********/
+/*
 .container {
 	display: inline-block;
 	cursor: pointer;
@@ -127,7 +148,7 @@
   .change .bar3 {
 	-webkit-transform: rotate(45deg) translate(-8px, -8px);
 	transform: rotate(45deg) translate(-7px, -8px);
-  }
+  }*/
 
 /******** ZAEHLER ********/
 span {cursor:pointer; }
@@ -214,4 +235,88 @@ vertical-align: middle;
 	cursor: pointer;
 	padding: 14px;
 	margin: 6px 0px;
+  }
+
+
+  /****** OVERLAY POP-UP BENACHRICHTIGUNG ********/
+  #overlay2 {
+	position: fixed; /* Sit on top of the page content */
+	display: none; /* Hidden by default */
+	width: 100%; /* Full width (cover the whole page) */
+	height: 100%; /* Full height (cover the whole page) */
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+	z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+	cursor: pointer; /* Add a pointer on hover */
+  }
+
+  .button{
+	width: 150px;
+	padding: 10px;
+	background-color: #ffffff;
+	box-shadow: -8px 8px 10px 3px rgba(0,0,0,0.2);
+	font-weight:bold;
+	text-decoration:none;
+  }
+
+  #cover{
+	position:fixed;
+	top:0;
+	left:0;
+	background:rgba(0,0,0,0.6);
+	z-index:5;
+	width:100%;
+	height:100%;
+	display:none;
+  }
+
+  #Screen{
+	height:200px;
+	width:330px;
+	margin:0 auto ;
+	position:relative;
+	z-index:10;
+	display:none;
+	border:5px solid #ffffff;
+	border-radius:10px;
+	background-color: #ffffff;
+  }
+
+  #Screen:target, #Screen:target + #cover{
+	display:block;
+	opacity:2;
+  }
+/*
+  .cancel{
+	display:block;
+	position:absolute;
+	top:3px;
+	right:2px;
+	color:black;
+	height:30px;
+	widows: 25px;px;
+	font-size:35px;
+	text-decoration:none;
+	text-align:center;
+	font-weight:bold;
+  }*/
+
+  button {
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:14px;
+	line-height:18px;
+	float: right;
+	display:block;
+	position:absolute;
+	top:160px;
+	right:10px;
+	color:black;
+	height:30px;
+	widows: 25px;
+	font-size:15px;
+	text-decoration:none;
+	text-align:center;
   }
