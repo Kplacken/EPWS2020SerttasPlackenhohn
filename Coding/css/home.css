@@ -76,6 +76,13 @@
 	box-shadow: 1px 1px 15px grey;
   }
 
+header {
+	position: fixed;
+	top: 0;
+	left: 0; 
+	right: 0;
+}
+
 /* Style the header links */
 .header h1 {
 	float: left;
