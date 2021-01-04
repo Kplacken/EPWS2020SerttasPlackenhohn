@@ -118,8 +118,8 @@
   }
 
 /******* HAMBURGER MENU ********/
-/*
-.container {
+
+/*.container {
 	display: inline-block;
 	cursor: pointer;
 	text-align: center;
@@ -320,3 +320,15 @@ vertical-align: middle;
 	text-decoration:none;
 	text-align:center;
   }
+
+
+
+.Hörbuch{
+	
+}
+
+.grafik{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
