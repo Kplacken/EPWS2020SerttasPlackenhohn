@@ -306,7 +306,7 @@ vertical-align: middle;
 	font-weight:bold;
   }*/
 
- /* button {
+ .speichern {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:14px;
 	line-height:18px;
@@ -321,7 +321,7 @@ vertical-align: middle;
 	font-size:15px;
 	text-decoration:none;
 	text-align:center;
-  }*/
+  }
 
 
 .grafik{
