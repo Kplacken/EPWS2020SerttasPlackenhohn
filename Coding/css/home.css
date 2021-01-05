@@ -75,6 +75,25 @@
     line-height:18px;
   }
   
+/*** Footer ***/
+.footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	box-shadow: 1px 1px 15px grey;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}
+
 /*** Header ***/
 .header {
 	overflow: hidden;
@@ -136,7 +155,7 @@ header {
 /******** ZAEHLER ********/
 span {cursor:pointer; }
 .number{
-	margin:100px;
+	margin:100px 60px;
 }
 .minus, .plus{
 	width:20px;
@@ -319,14 +338,20 @@ vertical-align: middle;
 	margin-left: 60px;
 }
 
-.überschrift{
+.überschrift1{
+	margin-left: 60px;
+	text-decoration: underline;
+	font-size: 2em;
+}
+
+.überschrift2{
 	margin-left: 60px;
 	text-decoration: underline;
 }
 
 .übungen_grafik{
 	object-fit: cover; 
-	width: 445px;
+	width: 279px;
 }
 
 .übungen{
