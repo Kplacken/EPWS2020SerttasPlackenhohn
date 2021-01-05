@@ -306,7 +306,7 @@ vertical-align: middle;
 	font-weight:bold;
   }*/
 
-  button {
+ /* button {
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
     font-size:14px;
 	line-height:18px;
@@ -321,7 +321,7 @@ vertical-align: middle;
 	font-size:15px;
 	text-decoration:none;
 	text-align:center;
-  }
+  }*/
 
 
 .grafik{
@@ -351,7 +351,7 @@ vertical-align: middle;
 
 .übungen_grafik{
 	object-fit: cover; 
-	width: 279px;
+	width: 330px;
 }
 
 .übungen{
@@ -433,4 +433,24 @@ li:before {
 }
 
 
+/*----------Einstellungen-----------*/
 
+.einstellungen{
+	margin-top: 100px;
+	font-size: 20px;
+}
+
+.einstellungen_text{
+	margin-left: 60px;
+}
+
+
+#ja{
+  transform: scale(0.7);
+  margin-left: 20px;
+}
+
+#nein{
+  transform: scale(0.7);
+  margin-left: 50px;
+}
