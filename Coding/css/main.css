@@ -265,6 +265,27 @@
   }
   
   /* FOOTER */
+
+  /*** Footer ***/
+ /* 
+.foot {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	background-color: white;
+	color: black;
+	text-align: center;
+	box-shadow: 1px 1px 15px grey;
+}
+
+footer {
+    clear: both;
+    position: relative;
+    height: 200px;
+    margin-top: -200px;
+}*/
+
   .footer {
     background-color: #fafafa;
     order: 5;
