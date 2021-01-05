@@ -53,7 +53,7 @@
 		font-weight: bold;
 	  }
 
-  a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin:0;
     padding:0;
     border:0;
@@ -169,7 +169,7 @@ vertical-align: middle;
 text-align: center;
 }
 
-input {
+input.zaehler {
 	height:34px;
 width: 100px;
 text-align: center;
@@ -331,6 +331,19 @@ vertical-align: middle;
 	margin: 40px 0 20px 0;
 }
 
+.grafik1{
+	object-fit: cover; 
+	width: 100%;
+	margin-top: -25px;
+}
+
+.grafik_video{
+	object-fit: cover; 
+	width: 100%;
+	margin-top: 60px;
+}
+
+
 .link{
 	height: 80px;
 	width: auto;
@@ -415,11 +428,11 @@ vertical-align: middle;
 
 /*https://stackoverflow.com/questions/10405945/html-ordered-list-1-1-1-2-nested-counters-and-scope-not-working*/
 
-ol {
+ol.tabelle_text1, ol.tabelle, ol.tabelle_text {
 	counter-reset: item ;
 }
 
-ol.tabelle{
+ol.tabelle, ol.tabelle_text1{
 	list-style-type: decimal;
 }
 
@@ -427,30 +440,157 @@ li {
 	display: block
 }
 
-li:before {
+li.tabelle_überschrift::before, li.tab::before {
 	content: counters(item, ".") " ";
 	counter-increment: item 
 }
 
 
-/*----------Einstellungen-----------*/
+/*-----------Soforthilfe.html---------------*/
+.überschrift_soforthilfe{
+	line-height: normal;
+	margin-left: 60px;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
-.einstellungen{
-	margin-top: 100px;
+.telefonseelsorge{
+	margin-top: 40px;;
+	margin-left: 60px;
+	line-height: normal;
+}
+
+.unterüberschrift{
+	margin-left: 60px;
+	font-size: 15px;
+	line-height: normal;
+}
+
+.stichpunkte{
+	margin-top: 20px;
+	margin-left: 100px;
+	line-height: normal;
+	font-size: 15px;
+}
+
+.kontakt{
+	margin-left: 60px;
+	font-size: 17px;
+	line-height: normal;
+}
+
+.info{
+	margin-left: 60px;
+	line-height: normal;
+	font-size: 15px;
+}
+
+.polizei{
+	margin-left: 60px;
+	line-height: normal;
+	margin-bottom: 80px;
+}
+
+.polizei_text{
+	font-size: 15px;
+}
+
+form{
+	margin-left: 60px;
+	border: 1px solid black;
+	padding: 20px;
+	margin-right: 60px;
+}
+
+legend.legend1{
+	font-size: 25px;
+	float: left;
+	text-decoration: underline;
+}
+
+legend.legend2{
+	font-size: 25px;
+	float: left;
+	text-decoration: underline;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+input{
+	float:left;
+	display: block;
+	margin-right: 5px;
+
+}
+
+.input1{
+	float:left;
+	display: block;
+	margin-top: 18px;
+}
+
+input.inp{
+	width: 60%;
+	float:left;
+	display: block;
+	margin-top: 8px;
+}
+
+label{
+	width: 60%;
+	float:left;
+	display: block;
+	margin-top: 15px;
+	font-size: 17px;
+}
+
+
+.fieldset_one{
+	margin-top: 40px;
+}
+
+ul{
+	float:left;
+	display: block;
+}
+
+.kommentarbox{
+	float:left;
+	display: block;
+	margin-top: 20px;
+	font-size: 17px;
+	
+}
+
+
+.formular_text{
+	float:left;
+	display: block;
+	margin-bottom: 30px;
+}
+
+.formular{
+	float:left;
+	display: block;
+	margin-bottom: 30px;
+	font-size: 15px;
+	font-weight: bolder;
+	padding:10px;
+}
+
+.fieldset2{
+	float:left;
+	display: block;
+}
+
+.input_einstellungen{
+	margin-left: 60px;
+	size: 20px;
+}
+
+.label_einstellungen{
 	font-size: 20px;
 }
-
-.einstellungen_text{
-	margin-left: 60px;
-}
-
-
-#ja{
-  transform: scale(0.7);
-  margin-left: 20px;
-}
-
-#nein{
-  transform: scale(0.7);
-  margin-left: 50px;
+ 
+.stoppuhr{
+	margin-bottom: 20px;
 }
