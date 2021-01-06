@@ -6,7 +6,7 @@ var myVar;
 
 function myFunction() {
  // myVar = setInterval(alertFunc, 10800000);
-  myVar = setInterval(alertFunc, 3000);
+  myVar = setInterval(alertFunc, 5000);
 }
 
 function myFunction1() {

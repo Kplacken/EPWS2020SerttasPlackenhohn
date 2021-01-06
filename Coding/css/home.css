@@ -53,7 +53,7 @@
 		font-weight: bold;
 	  }
 
-  a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
     margin:0;
     padding:0;
     border:0;
@@ -97,7 +97,8 @@ footer {
 /*** Header ***/
 .header {
 	overflow: hidden;
-	background-color: #ffffff;
+	background-color: #d8a434;
+/*	background-color: #43836d;*/
 	padding: 2px 50px;
 	box-shadow: 1px 1px 15px grey;
   }
@@ -155,7 +156,7 @@ header {
 /******** ZAEHLER ********/
 span {cursor:pointer; }
 .number{
-	margin:100px 60px;
+	margin:40px 60px;
 }
 .minus, .plus{
 	width:20px;
@@ -494,7 +495,7 @@ li.tabelle_überschrift::before, li.tab::before {
 	font-size: 15px;
 }
 
-form{
+.support, .morgens, .abends{
 	margin-left: 60px;
 	border: 1px solid black;
 	padding: 20px;
@@ -594,3 +595,76 @@ ul{
 .stoppuhr{
 	margin-bottom: 20px;
 }
+
+/***** BEFRAGUNG *****/
+.befragung{
+	margin:40px 60px;
+}
+
+/* --------- https://werner-zenk.de/css/sternebewertung.php ------- */
+
+/* Sternebewertung */
+
+span#Bewertung label {
+	line-height: 45px;
+	cursor: Pointer;
+   }
+   
+   span#Bewertung input[type="radio"] {
+	/*display: None;*/ 
+   }
+   
+   p.sternebewertung {
+	float: Left;
+	margin-top: -20px;
+   }
+   
+   p.sternebewertung:not(:checked) > input {
+	display: None;
+   }
+   
+   p.sternebewertung:not(:checked) > label {
+	float: Right;
+	width: 1em;
+	padding: 0 .1em;
+	overflow: Hidden;
+	white-space: Nowrap;
+	cursor: Pointer;
+	font-size: 200%;
+	line-height: 1.2;
+	color: #ffffff;
+	text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
+	transition: all .5s;
+   }
+   
+   p.sternebewertung:not(:checked) > label::before {
+/*	content: '★ ';*/
+	content: '☺ ';
+   }
+   
+   p.sternebewertung > input:checked ~ label {
+	color: #FFD700;
+	text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
+	animation: twinkle 1s ease-in-out infinite alternate;
+   }
+   
+   p.sternebewertung:not(:checked) > label:hover,
+   p.sternebewertung:not(:checked) > label:hover ~ label {
+	color: #FECF41;
+	text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+   }
+   
+   p.sternebewertung > input:checked + label:hover,
+   p.sternebewertung > input:checked + label:hover ~ label,
+   p.sternebewertung > input:checked ~ label:hover,
+   p.sternebewertung > input:checked ~ label:hover ~ label,
+   p.sternebewertung > label:hover ~ input:checked ~ label {
+	color: #FBB600;
+	text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+   }
+   
+   @keyframes twinkle {
+	to {
+	 text-shadow: 1px 1px #FFE653, 2px 2px #FFF5BF, .1em .1em .2em rgba(0,0,0,.5);
+	}
+   }
