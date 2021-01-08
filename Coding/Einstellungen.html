@@ -1,4 +1,4 @@
-<!---<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="de">
 
 <head>
@@ -27,7 +27,7 @@
 -->
 
     <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
-    <!------<header>
+    <header>
         <div class="header">
             <h1 class="logo">Life's Good</h1>
             <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
@@ -42,6 +42,8 @@
         <label for="nein">Nein</label>
     </div>
 
+    <p class="einstellungen_text" id="demo"></p>
+
 </body>
 
 <script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
@@ -51,30 +53,6 @@
 
 
 </html>
----->
-
-<!DOCTYPE html>
-<html>
-<body>
-
-<h2>JavaScript Confirm Box</h2>
-
-
-<button onclick="myFunction()">Try it</button>
-
-<p id="demo"></p>
-
-<script>
-function myFunction() {
-  var txt;
-  if (confirm("Press a button!")) {
-  } else {
-    setInterval(alertFunc,3000)
-    txt="Du wirst in 3 sekunden noch einmal erinnert"
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
-</script>
 
 </body>
 </html>
