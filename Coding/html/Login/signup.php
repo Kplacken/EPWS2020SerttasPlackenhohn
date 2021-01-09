@@ -1,40 +1,36 @@
 <?php
+    $firstname = filter_input(INPUT_POST, 'vname');
+    $surname = filter_input(INPUT_POST, 'nname');
+    $email = filter_input(INPUT_POST, 'email');
 
-    $user = 'root';
-    $pass = '';
-    $db = new PDO('mysql:host=localhost;dbname=lg', $user, $pass );
-    //Fehlermeldungen aktivieren
-    $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-    //Datenbank erstellen
-	$sql = "INSERT INTO login (vname, nname, email, status) VALUES ('$vname', '$nname', '$email', '$status')";    $db ->exec($sql);
-    echo 'Nutzer wurde erfolgreich registriert!'
+    if (!empty($firstname)){
+    if (!empty($surname)){
+    if (!empty($email)){
 
-	/*
-		$server = "localhost";
-		$user = "root";
-        $pass = "";
-        $db = "LG";
-        
-        $l_id	= $_POST["l_id"];
-		$vname	= $_POST["vname"];
-		$nname	= $_POST["nname"];
-		$email	= $_POST["email"];
-		$status	= $_POST["status"];
-		
-		echo 'Hello world!';
-	$verbindung = mysqli_connect($server, $user, $pass, $db) or die ("Keine Verbindung möglich");
-	
-//	mysql_select_db("LG") or die ("Suche fehlgeschlagen");
-	
-	
-	$sql = "INSERT INTO login (l_id, vname, nname, email, status) VALUES ('', '$vname', '$nname', '$email', '$status')";
-	
-    if ($verbindung->query($sql) === TRUE) {
-        echo "Erfolgreich registriert!";
-      } else {
-        echo "Error: " . $sql . "<br>" . $verbindung->error;
-      }
-      
-      $verbindung->close();
-	*/
+    $host = "localhost";
+    $dbusername = "root";
+    $dbpassword = "ahgase1_";
+    $dbname = "lg";
+
+    // Create connection
+    $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+
+    if (mysqli_connect_error()){
+        die('Connect Error ('. mysqli_connect_errno() .') '
+        . mysqli_connect_error());
+    }
+    else{
+        $sql = "INSERT INTO login (vname, nname, email)
+        values ('$firstname','$surname','$email')";
+        if ($conn->query($sql)){
+        echo "New record is inserted sucessfully";
+        }
+        else{
+            echo "Error: ". $sql ."
+            ". $conn->error;
+        }
+            $conn->close();
+    }
+    }}}
+
 	?>
