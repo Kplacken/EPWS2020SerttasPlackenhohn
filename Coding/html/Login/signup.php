@@ -9,7 +9,7 @@
 
     $host = "localhost";
     $dbusername = "root";
-    $dbpassword = "ahgase1_";
+    $dbpassword = "";
     $dbname = "lg";
 
     // Create connection
