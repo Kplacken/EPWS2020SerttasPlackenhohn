@@ -15,10 +15,6 @@
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="/Homepage.html">Startseite</a><br>
-            <a href="/Verlauf.html">Verlauf</a><br>
-            <a href="/Entspannen.html">Entspannen</a><br>
-            <a href="/Soforthilfe.html">Soforthilfe</a><br>
             <a href="/Support.html">Support</a><br>
             <a href="/Einstellungen.html">Einstellungen</a><br>
             <a href="/html/Login/Login.html">Abmelden</a>
@@ -29,30 +25,28 @@
     <header>
         <div class="header">
             <h1 class="logo">Life's Good</h1>
-            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
     </header>
+
+        <div class="header2">
+            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a class="header-menu" href="/Homepage.html">Startseite</a>
+            <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+            <a class="header-menu" href="/Verlauf.html">Verlauf</a>
+            <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
+        </div>
 
     <img src="/Bilder/startseite1.jpg" alt="Dehnen" class="grafik">
     <br>
 
-    <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
-    <div class="number">
-        <h2>Wie viel Liter Wasser haben Sie heute schon getrunken?</h2>
-        <h4>Bitte geben Sie hier die getrunkenen Liter an:</h4>
-        <span class="minus">-</span>
-        <input class="zaehler" id="zaehler"  type="text" value="0.0" />
-        <span class="plus">+</span>
-        <br><br>
-        <p style="font-style: italic">Wussten Sie schon, dass Wasser die Kraft und die elektrische Energie für alle
-            Gehirnfunktionen, insbesondere für das Denken liefert.
-            Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem
-            Vorderhirn zu denken, das allein den Überblick hat.
-            Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
-    </div><br>
-    <hr><br>
+   
+    <details>
+        <summary>Tägliche Befragung</summary>
+        <p class="p">Um dein Stresslevel einschätzen zu können, ist es hilfreich zu wissen, wie es dir nach dem aufstehen, sowie vor dem schlafen geht. Dafür wählst du nach dem aufstehen die Smileys, sowie die Frage mit ja/nein, bei “Morgends” aus und vor dem schlafen wählst du die Smileys bei “Abends” aus.</p>
+        <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
+    </details>
 
-    <h2 class="befragung">Tägliche Befragung</h2>
+  <!--  <h2 class="befragung">Tägliche Befragung</h2>-->
     <form class="morgens" style="background-color: rgb(238, 230, 224);">
         <fieldset>    
  <!--   <div class="befragung">-->
@@ -85,8 +79,34 @@
                 <input type="radio" id="stern1" name="bewertung" value="1"><label for="stern1" title="sehr schlecht"></label>
             </p>
         </fieldset>
-    </form><br><br><br><br><br>
+    </form><br><br>
+<hr>
 
+    <details>
+        <summary>Wasser Angabe</summary>
+        <p class="p"><b>Es wichtig genug zu trinken, denn:</b> Wusstest du schon, dass Wasser die Kraft und die elektrische Energie für alle Gehirnfunktionen, insbesondere für das Denken liefert. Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem Vorderhirn zu denken, das allein den Überblick hat. Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
+        <p class="p" style="font-style: italic; font-size: .8em;">&rarr; https://www.therapeutenfinder.com/news/100824-die-besten-tipps-gegen-stress-1-wasser-trinken.html</p>
+        <p class="p">Damit du immer genug trinkst, kannst du hier die getrunkenen Liter angeben. Du klickst nur auf Plus und hast 0.1 L hinzugefügt. Falls du dich mal vertust entfernst du die Liter einfach wieder, indem du auf Minus klickst.</p>
+        <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
+    </details>
+
+
+     <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
+     <div class="number">
+        <h2>Wie viel Liter Wasser haben Sie heute schon getrunken?</h2>
+        <h4>Bitte geben Sie hier die getrunkenen Liter an:</h4>
+        <span class="minus">-</span>
+        <input class="zaehler" id="zaehler"  type="text" value="0.0" />
+        <span class="plus">+</span>
+    <!--    <br><br>
+        <p style="font-style: italic">Wussten Sie schon, dass Wasser die Kraft und die elektrische Energie für alle
+            Gehirnfunktionen, insbesondere für das Denken liefert.
+            Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem
+            Vorderhirn zu denken, das allein den Überblick hat.
+            Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
+        -->
+        </div><br>
+    <br><br><br><br>
  <!--   </div>-->
 
     <footer>

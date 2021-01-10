@@ -38,13 +38,13 @@
 
                         <div class="input-box">
                           <input type="password" name="password" id="password" placeholder="Passwort" aria-describedby="" maxlength="30" aria-required="true" autocapitalize="off" autocorrect="off" required>
-                        </div>  
+                        </div>  <br>
                         <!--
                         <div class="input-box">
                           <input type="text" id="status" aria-describedby="" placeholder="Status (z.B Schüler, Student, Arbeitnehmer, Rentner etc.)" aria-required="true" maxlength="30" autocapitalize="off" autocorrect="off" name="status" value="" required>
                         </div> --> 
 
-                        <div class="input-box">
+                <!--        <div class="input-box">
                           <select placeholder="Status" name="status" id="status">
                             <option value="" selected></option>
                             <option value="schüler">Schüler/in</option>
@@ -53,7 +53,7 @@
                             <option value="rentner">Rentner/in</option>
                             <option value="diverse">Diverse</option>
                           </select>
-                         </div>  
+                         </div>  -->
 
                         <span class="button-box">
                           <button class="btn2" type="reset">Zurücksetzen</button>

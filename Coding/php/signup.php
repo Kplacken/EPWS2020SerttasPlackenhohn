@@ -8,8 +8,8 @@
     if (!empty($email)){
 
     $host = "localhost";
-    $dbusername = "root";
-    $dbpassword = "";
+    $dbusername = "gksu";
+    $dbpassword = "gksu";
     $dbname = "lg";
 
     // Create connection
@@ -23,7 +23,7 @@
         $sql = "INSERT INTO login (vname, nname, email)
         values ('$firstname','$surname','$email')";
         if ($conn->query($sql)){
-        echo "New record is inserted sucessfully";
+        echo "Registrierung erfolgreich!";
         }
         else{
             echo "Error: ". $sql ."
