@@ -8,8 +8,8 @@
     if (!empty($email)){
 
     $host = "localhost";
-    $dbusername = "gksu";
-    $dbpassword = "gksu";
+    $dbusername = "kplacken";
+    $dbpassword = "kplacken";
     $dbname = "lg";
 
     // Create connection
