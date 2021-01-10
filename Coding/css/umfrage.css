@@ -153,6 +153,22 @@ header {
   }
 
 
+    .header-menu, .header-menu_1{
+	font-size: 1.3em;
+	float: left;
+	cursor: pointer;
+	padding: 14px;
+	margin: 6px 0;
+	color: black;
+	font-weight: 500;
+  }
+
+  .header-menu_1{
+	margin-left: 47px;
+	color: black;
+  }
+
+
 /******* Overlay Navigation ********/
 .overlay {
 	height: 100%;

@@ -163,12 +163,19 @@ header {
 	box-shadow: 1px 1px 15px grey;
   }
 
-  .header-menu{
+  .header-menu, .header-menu_1{
 	font-size: 1.3em;
 	float: left;
 	cursor: pointer;
 	padding: 14px;
-	margin: 6px 0px;
+	margin: 6px 0;
+	color: black;
+	font-weight: 500;
+  }
+
+  .header-menu_1{
+	margin-left: 47px;
+	color: black;
   }
 
 
@@ -699,3 +706,42 @@ span#Bewertung label {
    .p{
 	text-align:center;
    }
+
+   /*--------------Dropdown https://www.w3schools.com/css/css_dropdowns.asp--------------------*/
+
+   .dropdown {
+	display: inline-block;
+  }
+  
+  .dropdown_content {
+	display: none;
+	position: absolute;
+	background-color:  #ECECEC;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	margin-top: 51px;
+  }
+
+   .dropdown:hover .dropdown_content {
+	display: block;
+  }
+
+  .header-menu:hover, .header-menu_1:hover{
+	background-color: grey;
+  }
+
+  .dropdown_text, .dropdown_text_nichts{
+	color:grey;
+  }
+
+  .dropdown_text_übung{
+	color: grey;
+	margin-left: 30px;
+  }
+
+  .dropdown_text_übung:hover, .dropdown_text:hover{
+	  color: black;
+	  font-weight: 500;
+  }
+
