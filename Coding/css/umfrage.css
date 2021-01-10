@@ -93,12 +93,12 @@ footer {
     height: 200px;
     margin-top: -200px;
 }
-
 /*** Header ***/
 .header {
 	overflow: hidden;
-	background-color: #64a07f;
-	padding: 2px 50px;
+	background-color: #4B5E65;
+/*	background-color: #43836d;*/
+	padding: 3px 50px;
 	box-shadow: 1px 1px 15px grey;
   }
 
@@ -112,7 +112,7 @@ header {
 /* Style the header links */
 .header h1 {
 	float: left;
-	color:black;
+	color:white;
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
@@ -123,7 +123,7 @@ header {
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header h1.logo {
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: bold;
   }
   
@@ -152,8 +152,17 @@ header {
 	}
   }
 
+  .header2{
+	background-color: #ECECEC;
+	position: fixed;
+	top: 70px;
+	left: 0; 
+	right: 0;
+	padding: 0;
+	box-shadow: 1px 1px 15px grey;
+  }
 
-    .header-menu, .header-menu_1{
+  .header-menu, .header-menu_1{
 	font-size: 1.3em;
 	float: left;
 	cursor: pointer;
@@ -166,6 +175,45 @@ header {
   .header-menu_1{
 	margin-left: 47px;
 	color: black;
+  }
+
+  
+   /*--------------Dropdown https://www.w3schools.com/css/css_dropdowns.asp--------------------*/
+
+   .dropdown {
+	display: inline-block;
+  }
+  
+  .dropdown_content {
+	display: none;
+	position: absolute;
+	background-color:  #ECECEC;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	margin-top: 51px;
+  }
+
+   .dropdown:hover .dropdown_content {
+	display: block;
+  }
+
+  .header-menu:hover, .header-menu_1:hover{
+	background-color: grey;
+  }
+
+  .dropdown_text, .dropdown_text_nichts{
+	color:grey;
+  }
+
+  .dropdown_text_übung{
+	color: grey;
+	margin-left: 30px;
+  }
+
+  .dropdown_text_übung:hover, .dropdown_text:hover{
+	  color: black;
+	  font-weight: 500;
   }
 
 
@@ -225,6 +273,7 @@ header {
 	cursor: pointer;
 	padding: 14px;
 	margin: 6px 0px;
+	margin-right: 25px;
   }
 
 /* Umfrage */
@@ -276,7 +325,7 @@ div{
 
 
 .titel{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-left: 18px;
 	margin-right: 28px;
 	text-align: center;
@@ -284,9 +333,14 @@ div{
 
 button{
     height: 50px;
-    width: 90px;
+    width: 190px;
     font-size: 15px;
-    float: right;
-    margin-top: 20px;
+	float: right;
+	margin-right: 20px;
+/*	position: absolute;*/
+/*	margin-left: 50%; */
+	margin-top: 20px;
 	border-radius: 5px;
+	background-color: #4B5E65;
+	color: white;
 }

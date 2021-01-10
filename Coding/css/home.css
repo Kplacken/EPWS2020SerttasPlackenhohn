@@ -264,6 +264,7 @@ vertical-align: middle;
 	cursor: pointer;
 	padding: 14px;
 	margin: 6px 0px;
+	margin-right: 25px;
   }
 
 
@@ -368,7 +369,7 @@ vertical-align: middle;
 .grafik_video{
 	object-fit: cover; 
 	width: 100%;
-	margin-top: 125px;
+	margin-top: 130px;
 }
 
 
@@ -452,6 +453,12 @@ vertical-align: middle;
 .abstand{
 	margin-top: 20px;
 	margin-left: 60px;
+}
+
+.übung-titel{
+	padding: 10px 0px 10px 0px;
+	background-color: #F18B99;
+	padding-left: 60px;
 }
 
 /*https://stackoverflow.com/questions/10405945/html-ordered-list-1-1-1-2-nested-counters-and-scope-not-working*/
