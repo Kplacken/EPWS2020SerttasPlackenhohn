@@ -536,6 +536,12 @@ legend.legend2{
 	margin-bottom: 20px;
 }
 
+input{
+	float:left;
+	display: block;
+	margin-right: 5px;
+
+}
 
 .input1{
 	float:left;
