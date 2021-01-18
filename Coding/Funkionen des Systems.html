@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt im Modul Entwicklungsprojekt</title>
-    <link rel="stylesheet" href="/css/einstellungen.css">
+    <link rel="stylesheet" href="./css/einstellungen.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
@@ -20,6 +20,7 @@
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
+-->
 
     <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <header>
@@ -34,12 +35,12 @@
         <div class="dropdown">
         <a class="header-menu" href="/Entspannen.html">Entspannen</a>
         <div class="dropdown_content">
-            <a class="dropdown_text" href="/Entspannen.html"><p>Zum Entspannen</p></a>
+            <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
             <p class="dropdown_text_nichts">Übungen</p>
-            <a href="/html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
-            <a href="/html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
-            <a href="/html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
-            <a href="/html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+            <a href="./html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+            <a href="./html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+            <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+            <a href="./html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
         </div>
         </div>
         <div class="dropdown">
@@ -47,7 +48,7 @@
             <div class="dropdown_content">
                 <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
                 <p class="dropdown_text_nichts">Befragung</p>
-                <a href="/html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
+                <a href="./html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
             </div>
             </div>
             <div class="dropdown">
@@ -55,21 +56,26 @@
     </div>
     </div>
 
-   
-        <h2 class="datenschutzeinstellungen">DATENSCHUTZ</h2>
-        <div class="datenschutz"> 
-        <p>Wir freuen uns über dein Interesse an an unserem Produkt, unserem Unternehmen und unserem Umgang mit den uns von deinen anvertrauten Daten.</p>
-        <h2>1. Verantwortliche Stellen und Kontakt</h2>
+    <h2 class="einstellungen_1">Funktionen des Systems</h2>
 
-        <h4>Verantwortliche Stelle im Sinne der Datenschutzgesetze ist Life´s Good, Musterstraße 1234, 50667 Köln. Für datenschutzrechtliche Fragen erreichst du unseren Datenschutzbeauftragten unter der Adresse: </h4>
-        <h4>Life´s Good, Datenschutzbeauftragter, Musterstraße 1234, 50667 Köln.</h4>
-            
-        <h4>E-Mail: datenschutz@lifesGood.de</h4>
+    
+    <div class="einstellungen">
+        <p class="einstellungen_text">Möchtest du Benachrichtigungen erhalten?</p>
+        <input type="radio" id="ja" name="Ja/Nein" value="Ja" onclick="myFunction()" checked>
+        <label for="ja"> Ja</label>
+        <input type="radio" id="nein" name="Ja/Nein" value="Nein" onclick="myFunction1()">
+        <label for="nein">Nein</label>
     </div>
+
+    <p class="einstellungen_text">Um die Änderungen (von Nein auf Ja) zu übernehmen, musst du die Seite bitte einmal aktualisieren.</p>
+    <p class="einstellungen_text" id="demo"></p>
 
 </body>
 
-<script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
+<script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
+<script language="javascript" type="text/javascript" src="./js/pop-up.js"></script>
+<script language="javascript" type="text/javascript" src="./js/stoppuhr.js"></script>
+
 
 
 </html>
