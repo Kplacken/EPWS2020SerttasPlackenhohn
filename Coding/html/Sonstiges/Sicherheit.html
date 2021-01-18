@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projekt im Modul Entwicklungsprojekt</title>
-    <link rel="stylesheet" href="./css/einstellungen.css">
+    <link rel="stylesheet" href="/css/home.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 </head>
 
 
 <body>
-
+    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
@@ -20,9 +20,8 @@
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
-    -->
 
-    <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
+
     <header>
         <div class="header">
             <h1 class="logo">Life's Good</h1>
@@ -35,20 +34,20 @@
         <div class="dropdown">
             <a class="header-menu" href="/Entspannen.html">Entspannen</a>
             <div class="dropdown_content">
-                <a class="dropdown_text" href="Entspannen.html">
+                <a class="dropdown_text" href="/Entspannen.html">
                     <p>Zum Entspannen</p>
                 </a>
                 <p class="dropdown_text_nichts">Übungen</p>
-                <a href="./html/Übungen/atemübungen.html">
+                <a href="/html/Übungen/atemübungen.html">
                     <p class="dropdown_text_übung">Atemübungen</p>
                 </a>
-                <a href="./html/Übungen/morgendliches_stretching.html">
+                <a href="/html/Übungen/morgendliches_stretching.html">
                     <p class="dropdown_text_übung">Morgendliches Stretching</p>
                 </a>
-                <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html">
+                <a href="/html/Übungen/dehnungen_vor_dem_zubettgehen.html">
                     <p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p>
                 </a>
-                <a href="./html/Übungen/dehnung_von_nacken&schultern.html">
+                <a href="/html/Übungen/dehnung_von_nacken&schultern.html">
                     <p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p>
                 </a>
             </div>
@@ -60,7 +59,7 @@
                     <p>Zum Verlauf</p>
                 </a>
                 <p class="dropdown_text_nichts">Befragung</p>
-                <a href="./html/Umfrage/Monatliche-Umfrage.html">
+                <a href="/html/Umfrage/Monatliche-Umfrage.html">
                     <p class="dropdown_text_übung">Monatliche Umfrage</p>
                 </a>
             </div>
@@ -70,49 +69,41 @@
         </div>
     </div>
 
-    <h2 class="einstellungen_2">EINSTELLUNGEN</h2>
+    <h2 class="sicherheit">SICHERHEIT</h2>
 
-    <div class="kontoeinstellungen_einstellungen">
-        <a href="/html/Sonstiges/Kontoeinstellungen.html">
-            <h3 style="color: black;">Kontoeinstellungen</h3>
-            <p class="text_konto" style="color: black;">Verwaltung des Kontos und Zugangsdaten</p>
-        </a>
-    </div>
-
-    <div class="sicherheit_einstellungen">
-        <a href="/html/Sonstiges/Sicherheit.html">
-        <h3 style="color: black;">Sicherheit</h3>
-        <p class="text_konto" style="color: black;">Konfiguration der Sicherheitseinstellungen</p>
-        </a>
+    <div class="passwort_neu">
+        <h2>Passwort ändern</h2>
+        <label for="passwort">Neues Passwort</label>
+        <input class="inp_pass" type="text" id="passwort" name="passwort" required>
     </div>
 
 
-    <div class="funktionen_einstellungen">
-        <a href="/Funktionen des Systems.html">
-            <h3 style="color: black;">Funktionen des Systems</h3>
-            <p class="text_konto"></p>
-        </a>
+    <div class="pass_stärke">
+        <h3>Passwortstärke:</h3>
+        <p class="stärke_text">Wähle mindestens 8 Zeichen. Verwende am besten kein Passwort von einer anderen Website
+            und kein einfach zu erratendes Passwort wie den Namen deines Haustiers.</p>
     </div>
 
-
-    <h2 class="einstellungen_3">SONSTIGES</h2>
-
-    <div class="rechtliches_einstellungen">
-        <a href="/html/Sonstiges/Rechtliches.html">
-            <h3 style="color: black;">Rechtliches</h3>
-        </a>
+    <div class="passwort_neu">
+        <label for="passwort">Neues Passwort bestätigen</label>
+        <input class="inp_pass" type="text" id="passwort" name="passwort" required>
     </div>
+
+    <button class="pass_ändern" type="submit">PASSWORT ÄNDERN</button>
+
+
+
+    <!----<div> ende-->
+
+    <footer>
+        <div class="footer">
+            <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+        </div>
+    </footer>
 
 </body>
 
-<script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
-<script language="javascript" type="text/javascript" src="./js/pop-up.js"></script>
-<script language="javascript" type="text/javascript" src="./js/stoppuhr.js"></script>
-
-
-
-</html>
-
-</body>
+<script language="javascript" type="text/javascript" src="/js/wasser.js"></script>
+<script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
 
 </html>
