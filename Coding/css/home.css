@@ -53,7 +53,7 @@
 		font-weight: bold;
 	  }
 
-  a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
+  a, abbr, acronym, address, applet, article, aside, audio, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, mark, menu, nav, object, output, pre, q, ruby, s, samp, section, select, small, strike, strong, sub, summary, sup,  tfoot, th, thead, time, tt, u, ul, var, video {
     margin:0;
     padding:0;
     border:0;
@@ -81,7 +81,7 @@
 	left: 0;
 	bottom: 0;
 	width: 100%;
-	background-color: white;
+	background-color: #ECECEC;
 	color: black;
 	text-align: center;
 	box-shadow: 1px 1px 15px grey;
@@ -97,8 +97,9 @@ footer {
 /*** Header ***/
 .header {
 	overflow: hidden;
-	background-color: #ffffff;
-	padding: 2px 50px;
+	background-color: #4B5E65;
+/*	background-color: #43836d;*/
+	padding: 3px 50px;
 	box-shadow: 1px 1px 15px grey;
   }
 
@@ -107,12 +108,13 @@ header {
 	top: 0;
 	left: 0; 
 	right: 0;
+	z-index: 2;
 }
 
 /* Style the header links */
 .header h1 {
 	float: left;
-	color:black;
+	color:white;
 	text-align: center;
 	padding: 12px;
 	text-decoration: none;
@@ -123,7 +125,7 @@ header {
   
   /* Style the logo link (notice that we set the same value of line-height and font-size to prevent the header to increase when the font gets bigger */
   .header h1.logo {
-	font-size: 28px;
+	font-size: 30px;
 	font-weight: bold;
   }
   
@@ -152,10 +154,37 @@ header {
 	}
   }
 
+  .header2{
+	background-color: #ECECEC;
+	position: fixed;
+	top: 70px;
+	left: 0; 
+	right: 0;
+	padding: 0;
+	box-shadow: 1px 1px 15px grey;
+	z-index: 3;
+  }
+
+  .header-menu, .header-menu_1{
+	font-size: 1.3em;
+	float: left;
+	cursor: pointer;
+	padding: 14px;
+	margin: 6px 0;
+	color: black;
+	font-weight: 500;
+  }
+
+  .header-menu_1{
+	margin-left: 47px;
+	color: black;
+  }
+
+
 /******** ZAEHLER ********/
 span {cursor:pointer; }
 .number{
-	margin:100px 60px;
+	margin:40px 60px;
 }
 .minus, .plus{
 	width:20px;
@@ -186,13 +215,13 @@ vertical-align: middle;
 	height: 100%;
 	width: 0;
 	position: fixed;
-	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: rgb(0,0,0);
 	background-color: rgba(0,0,0, 0.9);
 	overflow-x: hidden;
 	transition: 0.5s;
+	z-index: 20;
   }
   
   .overlay-content {
@@ -237,6 +266,7 @@ vertical-align: middle;
 	cursor: pointer;
 	padding: 14px;
 	margin: 6px 0px;
+	margin-right: 25px;
   }
 
 
@@ -328,47 +358,51 @@ vertical-align: middle;
 	object-fit: cover; 
 	width: 100%; 
 	box-shadow: 2px 2px 10px grey;
-	margin: 40px 0 20px 0;
+	margin: 120px 0 20px 0;
 }
 
 .grafik1{
 	object-fit: cover; 
 	width: 100%;
-	margin-top: -25px;
+	margin-top: -3px;
+	box-shadow: 2px 2px 10px grey;
 }
 
 .grafik_video{
 	object-fit: cover; 
 	width: 100%;
-	margin-top: 60px;
+	margin-top: 130px;
 }
 
 
 .link{
-	height: 80px;
+	height: 150px;
 	width: auto;
 	object-fit: cover;
-	margin-left: 60px;
+	
 }
 
 .überschrift1{
 	margin-left: 60px;
 	text-decoration: underline;
 	font-size: 2em;
+	margin-bottom: 40px;
 }
 
 .überschrift2{
 	margin-left: 60px;
 	text-decoration: underline;
+	margin-bottom: 40px;
 }
 
 .übungen_grafik{
 	object-fit: cover; 
-	width: 279px;
+	width: 350px;
 }
 
 .übungen{
 	margin-left: 60px;
+	margin-bottom: 50px;
 }
 /*-----------------------Seiten-Übungen---------------------------------*/
 
@@ -424,6 +458,12 @@ vertical-align: middle;
 .abstand{
 	margin-top: 20px;
 	margin-left: 60px;
+}
+
+.übung-titel{
+	padding: 10px 0px 10px 0px;
+	background-color: #F18B99;
+	padding-left: 60px;
 }
 
 /*https://stackoverflow.com/questions/10405945/html-ordered-list-1-1-1-2-nested-counters-and-scope-not-working*/
@@ -494,7 +534,7 @@ li.tabelle_überschrift::before, li.tab::before {
 	font-size: 15px;
 }
 
-form{
+.support, .morgens, .abends{
 	margin-left: 60px;
 	border: 1px solid black;
 	padding: 20px;
@@ -515,12 +555,6 @@ legend.legend2{
 	margin-bottom: 20px;
 }
 
-input{
-	float:left;
-	display: block;
-	margin-right: 5px;
-
-}
 
 .input1{
 	float:left;
@@ -594,3 +628,378 @@ ul{
 .stoppuhr{
 	margin-bottom: 20px;
 }
+
+/***** BEFRAGUNG *****/
+.befragung{
+	margin:40px 60px;
+}
+
+/* --------- https://werner-zenk.de/css/sternebewertung.php ------- */
+
+/***** Sternebewertung *****/
+
+span#Bewertung label {
+	line-height: 45px;
+	cursor: Pointer;
+   }
+   
+   span#Bewertung input[type="radio"] {
+	/*display: None;*/ 
+   }
+   
+   p.sternebewertung {
+	float: Left;
+	margin-top: -20px;
+   }
+   
+   p.sternebewertung:not(:checked) > input {
+	display: None;
+   }
+   
+   p.sternebewertung:not(:checked) > label {
+	float: Right;
+	width: 1em;
+	padding: 0 .1em;
+	overflow: Hidden;
+	white-space: Nowrap;
+	cursor: Pointer;
+	font-size: 200%;
+	line-height: 1.2;
+	color: #ffffff;
+	text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
+	transition: all .5s;
+   }
+   
+   p.sternebewertung:not(:checked) > label::before {
+/*	content: '★ ';*/
+	content: '☺ ';
+   }
+   
+   p.sternebewertung > input:checked ~ label {
+	color: #FFD700;
+	text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
+	animation: twinkle 1s ease-in-out infinite alternate;
+   }
+   
+   p.sternebewertung:not(:checked) > label:hover,
+   p.sternebewertung:not(:checked) > label:hover ~ label {
+	color: #FECF41;
+	text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+   }
+   
+   p.sternebewertung > input:checked + label:hover,
+   p.sternebewertung > input:checked + label:hover ~ label,
+   p.sternebewertung > input:checked ~ label:hover,
+   p.sternebewertung > input:checked ~ label:hover ~ label,
+   p.sternebewertung > label:hover ~ input:checked ~ label {
+	color: #FBB600;
+	text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
+   }
+   
+   @keyframes twinkle {
+	to {
+	 text-shadow: 1px 1px #FFE653, 2px 2px #FFF5BF, .1em .1em .2em rgba(0,0,0,.5);
+	}
+   }
+
+   /*** Accordeon Panel ****/
+
+   summary{
+	font-size: 1.5em;
+	font-weight: bold;
+	text-align:center;
+   }
+
+   details{
+	margin:40px 60px;
+	border: 1px solid black;
+   }
+
+   .p{
+	text-align:center;
+   }
+
+   /*--------------Dropdown https://www.w3schools.com/css/css_dropdowns.asp--------------------*/
+
+   .dropdown {
+	display: inline-block;
+  }
+  
+  .dropdown_content {
+	display: none;
+	position: absolute;
+	background-color:  #ECECEC;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	padding: 12px 16px;
+	margin-top: 51px;
+  }
+
+   .dropdown:hover .dropdown_content {
+	display: block;
+  }
+
+  .header-menu:hover, .header-menu_1:hover{
+	background-color: grey;
+  }
+
+  .dropdown_text, .dropdown_text_nichts{
+	color:grey;
+  }
+
+  .dropdown_text_übung{
+	color: grey;
+	margin-left: 30px;
+  }
+
+  .dropdown_text_übung:hover, .dropdown_text:hover{
+	  color: black;
+	  font-weight: 500;
+  }
+
+
+/*---------Kontoeinstellungen--------------------*/
+
+.kontoeinstellungen{
+	margin-top: 130px;
+	background-color: #FBE2AB;
+	padding: 20px 0 20px 60px;
+	font-weight: 400;
+}
+
+.sicherheit{
+	margin-top: 130px;
+	background-color: #71C8C2;
+	padding: 20px 0 20px 60px;
+	font-weight: 400;
+}
+
+
+.allgemein{
+	margin: 30px 60px 0 60px;
+	border-bottom: 1px solid rgb(192, 192, 192);
+}
+
+.allgemein_p{
+	margin: 30px 60px 0 60px;
+}
+
+.account_löschen{
+	margin-left: 60px;
+}
+
+.allgemein_input, .allgemein_input_2{
+	position: absolute;
+	left: 300px;
+	width: 400px;
+}
+
+.überschrift_acc{
+	margin-top: 60px;
+}
+
+.allgemein_text{
+	margin-bottom: 50px;
+}
+
+.button_acc{
+	font-size: 12px;
+	font-weight: 550;
+	padding: 7px ;
+	background-color: #4B5E65;
+	color: white;
+}
+
+/*---------------Sicherheitseinstellungen------------------------------------------*/
+
+.passwort_neu{
+	margin-left: 60px;
+	margin-top: 30px;
+	line-height: 10px;
+}
+
+input.inp_pass{
+	margin-top: 10px;
+	width: 40%;
+	height: 25px;
+	box-shadow: 1px 1px 3px #606060;
+}
+
+.pass_stärke{
+	margin-left: 60px;
+	margin-top: 50px;
+	line-height: normal;
+}
+
+.stärke_text{
+	margin-top:-12px;
+}
+
+.pass_ändern{
+	margin: 30px 0 0 60px;
+	color: white;
+	background-color: #4B5E65;
+	padding: 5px;
+	font-weight: 550;
+}
+
+/*-------------------------------------Slide = https://www.w3schools.com/howto/howto_js_slideshow.asp--------------------------------------------------*/
+
+
+.mySlides {
+	display: block;
+}
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto; 
+ 
+}
+
+.slide_images{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: grey;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+
+.prev:hover, .next:hover {
+  background-color:#4B5E65;
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot1 {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot2 {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot3 {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.dot4 {
+	cursor: pointer;
+	height: 10px;
+	width: 10px;
+	margin: 0 2px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #4B5E65;
+}
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .2} 
+  to {opacity: 1}
+}
+
+
+
+.apps_allgemein{
+	margin-top: 100px;
+}
+
+.kostenlose{
+	margin-top: 50px;
+}
+
+
+.wasserglas_07{
+	height: 50px;
+	width: auto;
+	object-fit: cover;	
+	margin-left: 12px;
+}
+
+.wasserglas_05{
+	height: 40px;
+	width: auto;
+	object-fit: cover;
+	margin-left: 4px;	
+}
+
+.wasserglas_03{
+	height: 30px;
+	width: auto;
+	object-fit: cover;	
+	margin-left: 12px;
+}
+
+.button_wasser{
+	margin-top: 20px;
+}
+

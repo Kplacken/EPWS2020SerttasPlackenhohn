@@ -10,17 +10,13 @@
 </head>
 
 
-<body>
+    <body>
 <!----https://www.w3schools.com/howto/howto_js_fullscreen_overlay.asp----->
     <div id="myNav" class="overlay">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         <div class="overlay-content">
-            <a href="/Homepage.html">Startseite</a><br>
-            <a href="/Entspannen.html">Entspannen</a><br>
-            <a href="./Verlauf.html">Verlauf</a><br>
-            <a href="/Soforthilfe.html">Soforthilfe</a><br>
-            <a href="./Support.html">Support</a><br>
-            <a href="./Einstellungen.html">Einstellungen</a><br>
+            <a href="/Support.html">Support</a><br>
+            <a href="/Einstellungen.html">Einstellungen</a><br>
             <a href="/html/Login/Login.html">Abmelden</a>
         </div>
     </div>
@@ -29,30 +25,144 @@
     <header>
         <div class="header">
             <h1 class="logo">Life's Good</h1>
-            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
         </div>
     </header>
+
+        <div class="header2">
+            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+            <a class="header-menu_1" href="/Homepage.html">Startseite</a>
+            <div class="dropdown">
+            <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+            <div class="dropdown_content">
+                <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
+                <p class="dropdown_text_nichts">Übungen</p>
+                <a href="./html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+                <a href="./html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+                <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+                <a href="./html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+            </div>
+            </div>
+            <div class="dropdown">
+                <a class="header-menu" href="/Verlauf.html">Verlauf</a>
+                <div class="dropdown_content">
+                    <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
+                    <p class="dropdown_text_nichts">Befragung</p>
+                    <a href="./html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
+                </div>
+                </div>
+                <div class="dropdown">
+            <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
+        </div>
+        </div>
 
     <img src="/Bilder/startseite1.jpg" alt="Dehnen" class="grafik">
     <br>
 
-    <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
-    <div class="number">
+   
+    <details>
+        <summary>Tägliche Befragung</summary>
+        <p class="p">Um dein Stresslevel einschätzen zu können, ist es hilfreich zu wissen, wie es dir nach dem aufstehen, sowie vor dem schlafen geht. Dafür wählst du nach dem aufstehen die Smileys, sowie die Frage mit ja/nein, bei “Morgends” aus und vor dem schlafen wählst du die Smileys bei “Abends” aus.</p>
+        <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
+    </details>
+
+  <!--  <h2 class="befragung">Tägliche Befragung</h2>-->
+    <form class="morgens" style="background-color: rgb(238, 230, 224);">
+        <fieldset>    
+ <!--   <div class="befragung">-->
+            <h3>Bitte Morgens ausfüllen:</h3>
+
+            <h4>Wie hast du die Nacht geschlafen?</h4>
+            <p class="sternebewertung">
+                <input type="radio" id="stern5" name="bewertung" value="5"><label for="stern5" title="sehr gut"></label>
+                <input type="radio" id="stern4" name="bewertung" value="4"><label for="stern4" title="gut"></label>
+                <input type="radio" id="stern3" name="bewertung" value="3"><label for="stern3" title="in Ordnung"></label>
+                <input type="radio" id="stern2" name="bewertung" value="2"><label for="stern2" title="schlecht"></label>
+                <input type="radio" id="stern1" name="bewertung" value="1"><label for="stern1" title="sehr schlecht"></label>
+            </p>
+        <br><br>
+            <h4 style="clear:left">Fühlst du dich ausgeschlafen? </h4>
+            <input type="radio" name="wert" value="ja">ja<br>
+            <input type="radio" name="wert" value="nein">nein<br><br>
+        </fieldset>
+    </form><br>
+
+    <form class="abends" style="background-color: rgb(238, 230, 224);">
+        <fieldset>  
+            <h3>Bitte Abends ausfüllen:</h3>
+            <h4>Wie anstrengend war dein Tag?</h4>
+            <p class="sternebewertung">
+                <input type="radio" id="stern5" name="bewertung" value="5"><label for="stern5" title="sehr gut"></label>
+                <input type="radio" id="stern4" name="bewertung" value="4"><label for="stern4" title="gut"></label>
+                <input type="radio" id="stern3" name="bewertung" value="3"><label for="stern3" title="in Ordnung"></label>
+                <input type="radio" id="stern2" name="bewertung" value="2"><label for="stern2" title="schlecht"></label>
+                <input type="radio" id="stern1" name="bewertung" value="1"><label for="stern1" title="sehr schlecht"></label>
+            </p>
+        </fieldset>
+    </form><br><br>
+<hr>
+
+    <details>
+        <summary>Wasser Angabe</summary>
+    <!--    <p class="p"><b>Es wichtig genug zu trinken, denn:</b> Wusstest du schon, dass Wasser die Kraft und die elektrische Energie für alle Gehirnfunktionen, insbesondere für das Denken liefert. Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem Vorderhirn zu denken, das allein den Überblick hat. Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
+        <p class="p" style="font-style: italic; font-size: .8em;">&rarr; https://www.therapeutenfinder.com/news/100824-die-besten-tipps-gegen-stress-1-wasser-trinken.html</p>-->
+        <p class="p">Damit du immer genug trinkst, kannst du hier die getrunkenen Liter angeben. Du klickst nur auf Plus und hast 0.1 L hinzugefügt. Falls du dich mal vertust entfernst du die Liter einfach wieder, indem du auf Minus klickst.</p>
+        <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
+    </details>
+
+
+     <!----https://codepen.io/Tanya_Rybachuk/pen/jyxzEp----->
+     <div class="number">
         <h2>Wie viel Liter Wasser haben Sie heute schon getrunken?</h2>
         <h4>Bitte geben Sie hier die getrunkenen Liter an:</h4>
+
+        <table style="border-spacing: 25px 0;">
+            <tbody>
+                <td>
+                <tr> <input class="wasserglas_07" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button"  value="0.0">
+                     <input class="wasserglas_05" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button" value="0.0">
+                     <input class="wasserglas_03" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button" value="0.0">
+                </tr>
+            </td>
+                <tr>
+                     <td>0.7l</td>
+                     <td>0.5l</td>
+                     <td>0.3l</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+      <!----<form>
+            <figure>
+            <input class="wasserglas_07" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button">
+         
+            <input class="wasserglas_05" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button">
+            <figcaption>Bildunterschrift</figcaption>
+            <input class="wasserglas_025" type="image" src="/Bilder/wasserglas.png" alt="Glas als Button">
+            <figcaption>Bildunterschrift</figcaption>
+        </figure>
+          </form>  ---->        
+        <div class="button_wasser">
         <span class="minus">-</span>
         <input class="zaehler" id="zaehler"  type="text" value="0.0" />
         <span class="plus">+</span>
-        <br><br>
+    </div>
+    <!--    <br><br>
         <p style="font-style: italic">Wussten Sie schon, dass Wasser die Kraft und die elektrische Energie für alle
             Gehirnfunktionen, insbesondere für das Denken liefert.
             Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem
             Vorderhirn zu denken, das allein den Überblick hat.
             Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
-    </div>
-    <hr>
+        -->
+        <p><b>Es ist wichtig genug zu trinken, denn:</b> Wusstest du schon, dass Wasser die Kraft und die elektrische Energie für alle Gehirnfunktionen, insbesondere für das Denken liefert. Insbesondere in Stresssituationen hilft es uns, den Überblick zu bewahren und auch weiterhin in unserem Vorderhirn zu denken, das allein den Überblick hat. Wasser steigert die Arbeits- und Leistungsfähigkeit, indem es die Aufmerksamkeitsspanne verlängert.</p>
+        <p style="font-style: italic; font-size: .8em;">&rarr; https://www.therapeutenfinder.com/news/100824-die-besten-tipps-gegen-stress-1-wasser-trinken.html</p>
+        
+        <div style="font-size: 10px;">Icons erstellt von <a href="https://www.flaticon.com/de/autoren/dinosoftlabs" title="DinosoftLabs">DinosoftLabs</a> from <a href="https://www.flaticon.com/de/" title="Flaticon">www.flaticon.com</a></div>
 
-
+        <p></p>
+        </div><br>
+    <br><br><br><br>
+ <!--   </div>-->
 
     <footer>
         <div class="footer">
