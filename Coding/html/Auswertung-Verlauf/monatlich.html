@@ -8,6 +8,8 @@
   <title>Projekt im Modul Entwicklungsprojekt</title>
   <link rel="stylesheet" href="/css/verlauf.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
 
 </head>
 
@@ -65,16 +67,20 @@
         <h3 style="color: rgb(126, 210, 212);">Okt 2020 - Feb 2021</h3>
 
         <div id="chartContainer" style="height:300px; width:50%; border:1px solid #E65858;border-radius:4px;"></div>
+        <button id="button">Add DataPoints</button>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
+        <p>In der Umfrage werden die Antworten mit 1-3 Punkten bewertet. 3 steht für sehr gut, 2 steht für gut und 1 für schlecht. Hat der Nutzer alle Fragen beantwortet,
+            werden alle Punkte zusammengezählt. Das Ergebnis wird durch die Anzahl der Fragen dividiert. Dadurch ergibt sich der Durchschnitt (das Stresslevel) für einen Monat.
+        </p>
 
     </div>
 
-    <footer>
+  <!--<footer>
         <div class="footer">
             <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
           </div>
-    </footer>
+    </footer>---->  
 
 </body>
 
