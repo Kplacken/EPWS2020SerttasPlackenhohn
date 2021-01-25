@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
   <title>Projekt im Modul Entwicklungsprojekt</title>
-  <link rel="stylesheet" href="./css/verlauf.css">
+  <link rel="stylesheet" href="/css/verlauf.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 
 </head>
@@ -40,10 +40,10 @@
         <div class="dropdown_content">
             <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
             <p class="dropdown_text_nichts">Übungen</p>
-            <a href="./html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
-            <a href="./html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
-            <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
-            <a href="./html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+            <a href="/html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+            <a href="/html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+            <a href="/html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+            <a href="/html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
         </div>
         </div>
         <div class="dropdown">
@@ -51,7 +51,7 @@
             <div class="dropdown_content">
                 <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
                 <p class="dropdown_text_nichts">Befragung</p>
-                <a href="./html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
+                <a href="/html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
             </div>
             </div>
             <div class="dropdown">
@@ -59,28 +59,16 @@
     </div>
     </div>
 
-    <img src="/Bilder/verlauf.jpg" alt="Dehnen" class="grafik">
+    <div class="auswertung">
 
-    <div class="trinkverhalten">
-        <a href="/html/Auswertung-Verlauf/trinkverhalten.html">
-            <h3 style="color: black;">Trinkverhalten</h3>
-        </a>
+        <h2>Wöchentlicher Verlauf</h2>
+        <h3 style="color: rgb(226, 139, 183);">15.02.2021 - 21.01.2021</h3>
+
+        <div id="chartWeekly" style="height:300px; width:50%; border:1px solid #E65858;border-radius:4px;"></div>
+        <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+
     </div>
-
-    <div class="wöchentlich">
-        <a href="/html/Auswertung-Verlauf/wöchentlich.html">
-            <h3 style="color: black;">Wöchentlicher Verlauf</h3>
-        </a>
-    </div>
-
-    <div class="monatlich">
-        <a href="/html/Auswertung-Verlauf/monatlich.html">
-            <h3 style="color: black;">Monatlicher Verlauf</h3>
-        </a>
-    </div>
-
-    <br><br><br><br><br><br><br><br><br><br><br><br>
-
 
     <footer>
         <div class="footer">
@@ -90,9 +78,8 @@
 
 </body>
 
-    <script language="javascript" type="text/javascript" src="./js/slide-down-menu.js"></script>
-    <script language="javascript" type="text/javascript" src="./js/diagramm.js"></script>
-    <script language="javascript" type="text/javascript" src="./js/charts-month.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
+    <script language="javascript" type="text/javascript" src="/js/charts-week.js"></script>
 
 
 
