@@ -694,68 +694,6 @@ ul{
 	}
    }
 
-
-
-
-   /***** Sternebewertung1 *****/
-   
-   p.sternebewertung1 {
-	float: Left;
-	margin-top: -20px;
-   }
-   
-   
-   p.sternebewertung1:not(:checked) > input {
-	display: None;
-   }
-   
-   p.sternebewertung1:not(:checked) > label {
-	float: Right;
-	width: 1em;
-	padding: 0 .1em;
-	overflow: Hidden;
-	white-space: Nowrap;
-	cursor: Pointer;
-	font-size: 200%;
-	line-height: 1.2;
-	color: #ffffff;
-	text-shadow: 1px 1px #B0B0B0, 2px 2px #606060, .1em .1em .2em rgba(0,0,0,.5);
-	transition: all .5s;
-   }
-   
-   p.sternebewertung1:not(:checked) > label::before {
-/*	content: '★ ';*/
-	content: '☺ ';
-   }
-   
-   p.sternebewertung1 > input:checked ~ label {
-	color: #FFD700;
-	text-shadow: 1px 1px #C06000, 2px 2px #904000, .1em .1em .2em rgba(0,0,0,.5);
-	animation: twinkle 1s ease-in-out infinite alternate;
-   }
-   
-   p.sternebewertung1:not(:checked) > label:hover,
-   p.sternebewertung1:not(:checked) > label:hover ~ label {
-	color: #FECF41;
-	text-shadow: 1px 1px #F29E02, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-   }
-   
-   p.sternebewertung1 > input:checked + label:hover,
-   p.sternebewertung1 > input:checked + label:hover ~ label,
-   p.sternebewertung1 > input:checked ~ label:hover,
-   p.sternebewertung1 > input:checked ~ label:hover ~ label,
-   p.sternebewertung1 > label:hover ~ input:checked ~ label {
-	color: #FBB600;
-	text-shadow: 1px 1px #F8BA01, 2px 2px #B57340, .1em .1em .2em rgba(0,0,0,.5);
-   }
-   
-   @keyframes twinkle {
-	to {
-	 text-shadow: 1px 1px #FFE653, 2px 2px #FFF5BF, .1em .1em .2em rgba(0,0,0,.5);
-	}
-   }
-
-
    /*** Accordeon Panel ****/
 
    summary{
