@@ -286,6 +286,8 @@ form{
 	margin-right: 300px;*/
     border-radius: 15px;
     background-color: white;
+	margin-left: 20%;
+	margin-right: 20%;
 }
 
 fieldset {
@@ -324,7 +326,7 @@ div{
 
 
 .titel{
-    margin-top: 150px;
+    margin-top: 160px;
     margin-left: 18px;
 	margin-right: 28px;
 	text-align: center;
