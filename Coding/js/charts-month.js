@@ -15,7 +15,7 @@
                 lineColor:"black",
         
                 dataPoints: [
-                  { x: new Date(2020, 09, 1), y: 0.8, color:"#FF0000"},
+                  { x: new Date(2020, 09, 1), y: 0.8, color:"#FF0000", },
                   { x: new Date(2020, 10, 1), y: 1, color:"#FF0000" },
                   { x: new Date(2020, 11, 1), y: 1.5, color:"#880000"},
                   { x: new Date(2021, 00, 1), y: 0.2, color:"#880000", indexLabel: "\u2193 lowest",markerColor: "#FF0000", markerType: "cross" },
