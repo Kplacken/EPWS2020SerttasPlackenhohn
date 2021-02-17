@@ -81,107 +81,107 @@
 
     </div>
 
-<?php
- $host = "localhost";
- $dbusername = "kplacken";
- $dbpassword = "kplacken";
- $dbname = "lg";
+    <?php
+    $host = "localhost";
+    $dbusername = "gksu";
+    $dbpassword = "gksu";
+    $dbname = "lg";
 
- $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
- if (mysqli_connect_error()){
-     die('Connect Error ('. mysqli_connect_errno() .') '
-     . mysqli_connect_error());
- }
-
-
- # Verbindung hat geklappt, weiter ...
- echo "Verbindung zur Datenbank erfolgreich.<br>";
-
- //mysqli_select_db($dbname, $conn);
-
-$query = "SELECT * FROM umfrage where umfrageId = '4' ";
-
-$result = $conn -> query($query);
-$row = $result->fetch_array(MYSQLI_ASSOC);
-printf ("%s %s %s %s %s %s %s<br>", $row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
-
-
-$array = array($row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
-
-$summe = array_sum($array);
-$avg = $summe/7;
-
-echo "summe: " . $summe . "<br>";
-echo "Durchschnitt: " . $avg . "\n";
-
-
-
-
-/*if ($result = mysqli_query($conn, $query)) {
-
-   
-    while ($obj = mysqli_fetch_object($result)) {
-        printf ("%s %s %s %s %s %s %s \n",$obj-> frage1, $obj-> frage2, $obj -> frage3, $obj -> frage4, $obj -> frage5, $obj -> frage6, $obj -> frage7 );
+    $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
+    if (mysqli_connect_error()){
+        die('Connect Error ('. mysqli_connect_errno() .') '
+        . mysqli_connect_error());
     }
 
-    mysqli_free_result($result);
 
-}*/
+    # Verbindung hat geklappt, weiter ...
+    echo "Verbindung zur Datenbank erfolgreich.<br>";
 
-mysqli_close($conn);
+    //mysqli_select_db($dbname, $conn);
 
-?>
+    $query = "SELECT * FROM umfrage where umfrageId = '8' "; //+1
 
-<script type="text/javascript">
+    $result = $conn -> query($query);
+    $row = $result->fetch_array(MYSQLI_ASSOC);
+    printf ("%s %s %s %s %s %s %s<br>", $row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
 
-   /*https://canvasjs.com/html5-javascript-spline-chart/*/
-   var avg = <?php echo $avg ?>;
-   var test = avg;
-   window.onload = function () {
-          var chart = new CanvasJS.Chart("chartContainer",
-          {
-            axisY: {
-              gridThickness: 0.2,
-              stripLines: [{
-                  value: 1.5,
-                label: "gut"
-            }],        
-        },
-             data: [
-             {
-                type: "line",
-                lineColor:"black",
-        
-                dataPoints: [
-                  { x: new Date(2020, 09, 1), y: 0.8, color:"#FF0000", },
-                  { x: new Date(2020, 10, 1), y: 1, color:"#FF0000" },
-                  { x: new Date(2020, 11, 1), y: 1.5, color:"#880000"},
-                  { x: new Date(2021, 00, 1), y: 0.2, color:"#880000", indexLabel: "\u2193 lowest",markerColor: "#FF0000", markerType: "cross" },
-                  { x: new Date(2021, 01, 1), y: 2, color:"#008800"},
-                  { x: new Date(2021, 02, 1), y: 2.7, color:"#00FF00",  indexLabel: "\u2191 highest",markerColor: "#00ff00", markerType: "triangle"},
-                  { x: new Date(2021, 03, 1), y: test, color:"#00FF00" }
-                  ]
-             }
-            ]
-          });
-      
-          chart.render();
 
-          /*https://canvasjs.com/docs/charts/methods/dataseries/addto/*/ 
-          
-          document.getElementById("button").addEventListener("click", function(){
-            chart.data[0].addTo("dataPoints", { x: new Date(2021, 04, 1), y: 2.1, color:"#00FF00"})
-             }); 
+    $array = array($row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
+
+    $summe = array_sum($array);
+    $avg = $summe/7;
+
+    echo "summe: " . $summe . "<br>";
+    echo "Durchschnitt: " . $avg . "\n";
+
+
+
+
+    /*if ($result = mysqli_query($conn, $query)) {
+
+    
+        while ($obj = mysqli_fetch_object($result)) {
+            printf ("%s %s %s %s %s %s %s \n",$obj-> frage1, $obj-> frage2, $obj -> frage3, $obj -> frage4, $obj -> frage5, $obj -> frage6, $obj -> frage7 );
         }
 
+        mysqli_free_result($result);
+
+    }*/
+
+    mysqli_close($conn);
+
+    ?>
+
+    <script type="text/javascript">
+
+    /*https://canvasjs.com/html5-javascript-spline-chart/*/
+    var avg = <?php echo $avg ?>;
+    var test = avg;
+    window.onload = function () {
+            var chart = new CanvasJS.Chart("chartContainer",
+            {
+                axisY: {
+                gridThickness: 0.2,
+                stripLines: [{
+                    value: 1.5,
+                    label: "gut"
+                }],        
+            },
+                data: [
+                {
+                    type: "line",
+                    lineColor:"black",
+            
+                    dataPoints: [
+                    { x: new Date(2020, 09, 1), y: 0.8, color:"#FF0000", },
+                    { x: new Date(2020, 10, 1), y: 1, color:"#FF0000" },
+                    { x: new Date(2020, 11, 1), y: 1.5, color:"#880000"},
+                    { x: new Date(2021, 00, 1), y: 0.2, color:"#880000", indexLabel: "\u2193 lowest",markerColor: "#FF0000", markerType: "cross" },
+                    { x: new Date(2021, 01, 1), y: 2, color:"#008800"},
+                    { x: new Date(2021, 02, 1), y: 2.7, color:"#00FF00",  indexLabel: "\u2191 highest",markerColor: "#00ff00", markerType: "triangle"},
+                    { x: new Date(2021, 03, 1), y: test, color:"#00FF00" }
+                    ]
+                }
+                ]
+            });
+        
+            chart.render();
+
+            /*https://canvasjs.com/docs/charts/methods/dataseries/addto/*/ 
+            
+            document.getElementById("button").addEventListener("click", function(){
+                chart.data[0].addTo("dataPoints", { x: new Date(2021, 04, 1), y: 2.1, color:"#00FF00"})
+                }); 
+            }
 
 
-// boolean outputs "" if false, "1" if true
-var bool = "<?php echo $avg ?>"; 
 
-document.getElementById("hier").innerHTML  = bool;
+    // boolean outputs "" if false, "1" if true
+    var bool = "<?php echo $avg ?>"; 
 
-</script>
+    document.getElementById("hier").innerHTML  = bool;
+
+    </script>
 
 
   <!--<footer>

@@ -50,7 +50,7 @@
                     <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
                     <a href="/html/Auswertung-Verlauf/trinkverhalten.html"><p class="dropdown_text_übung">Trinkverhalten</p></a>
                     <a href="/html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Wöchentlicher Verlauf</p></a>
-                    <a href="/html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
+                    <a href="/html/Auswertung-Verlauf/monatlich.php"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
                     <p class="dropdown_text_nichts">Befragung</p>
                     <a href="/html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
                 </div>
@@ -81,8 +81,8 @@
     if (!empty($frage7)){
 
     $host = "localhost";
-    $dbusername = "kplacken";
-    $dbpassword = "kplacken";
+    $dbusername = "gksu";
+    $dbpassword = "gksu";
     $dbname = "lg";
  
     // Create connection
