@@ -81,8 +81,8 @@
     if (!empty($frage7)){
 
     $host = "localhost";
-    $dbusername = "gksu";
-    $dbpassword = "gksu";
+    $dbusername = "kplacken";
+    $dbpassword = "kplacken";
     $dbname = "lg";
  
     // Create connection
@@ -104,6 +104,7 @@
             $conn->close();
     }
     }}}}}}}
+     
 
 	?>
         <h2>Vielen Dank für die Teilnahme!</h2>

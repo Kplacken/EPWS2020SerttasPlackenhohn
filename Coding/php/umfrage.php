@@ -7,6 +7,7 @@
     $frage6 = filter_input(INPUT_POST, 'frage6');
     $frage7 = filter_input(INPUT_POST, 'frage7');
 
+    echo "hiiii";
     if (!empty($frage1)){
     if (!empty($frage2)){
     if (!empty($frage3)){
@@ -16,8 +17,8 @@
     if (!empty($frage7)){
 
     $host = "localhost";
-    $dbusername = "gksu";
-    $dbpassword = "gksu";
+    $dbusername = "kplacken";
+    $dbpassword = "kplacken";
     $dbname = "lg";
 
     // Create connection

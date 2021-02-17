@@ -1,8 +1,8 @@
 
 <?php 
 	$host="localhost";
-	$user="gksu";
-	$password="gksu";
+	$user="kplacken";
+	$password="kplacken";
 	$db="lg";
 
 
@@ -10,8 +10,8 @@
 	 *    DB-Zugangsdaten
 	 */
 	$config['sql_hostname'] = 'localhost';    //MySQL-Server
-	$config['sql_username'] = 'gksu';        //Benutzername
-	$config['sql_password'] = 'gksu';        //Kennwort
+	$config['sql_username'] = 'kplacken';        //Benutzername
+	$config['sql_password'] = 'kplacken';        //Kennwort
 	$config['sql_database'] = 'lg';        //Datenbank
 
 
