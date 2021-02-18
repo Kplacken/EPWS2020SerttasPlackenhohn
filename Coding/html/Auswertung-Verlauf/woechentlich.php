@@ -81,8 +81,8 @@
 
     <?php
     $host = "localhost";
-    $dbusername = "kplacken";
-    $dbpassword = "kplacken";
+    $dbusername = "gksu";
+    $dbpassword = "gksu";
     $dbname = "lg";
 
     $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
@@ -97,7 +97,7 @@
 
     //mysqli_select_db($dbname, $conn);
 
-    $query = "SELECT * FROM umfragewoche where umfrageID = '9' "; //+1
+    $query = "SELECT * FROM umfragewoche where umfrageID = '5' "; //+1
 
     $result = $conn -> query($query);
     $row = $result->fetch_array(MYSQLI_ASSOC);
@@ -166,6 +166,7 @@
           chart.render();
         }
 </script>
+<br><br><br><br>
 
 </body>
     <script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>

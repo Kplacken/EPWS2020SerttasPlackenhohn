@@ -143,8 +143,8 @@
 
 
                 $host = "localhost";
-                $dbusername = "kplacken";
-                $dbpassword = "kplacken";
+                $dbusername = "gksu";
+                $dbpassword = "gksu";
                 $dbname = "lg";
 
                 // Create connection

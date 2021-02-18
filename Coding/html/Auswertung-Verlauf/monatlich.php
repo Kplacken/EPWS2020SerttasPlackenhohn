@@ -83,8 +83,8 @@
 
     <?php
     $host = "localhost";
-    $dbusername = "kplacken";
-    $dbpassword = "kplacken";
+    $dbusername = "gksu";
+    $dbpassword = "gksu";
     $dbname = "lg";
 
     $conn = new mysqli ($host, $dbusername, $dbpassword, $dbname);
@@ -99,7 +99,7 @@
 
     //mysqli_select_db($dbname, $conn);
 
-    $query = "SELECT * FROM umfrage where umfrageId = '4' "; //+1
+    $query = "SELECT * FROM umfrage where umfrageId = '11' "; //+1
 
     $result = $conn -> query($query);
     $row = $result->fetch_array(MYSQLI_ASSOC);
@@ -182,13 +182,13 @@
     document.getElementById("hier").innerHTML  = bool;
 
     </script>
-
-
-  <!--<footer>
+    
+    <br><br><br><br>
+    <footer>
         <div class="footer">
             <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
           </div>
-    </footer>---->  
+    </footer>
 
 </body>
 
