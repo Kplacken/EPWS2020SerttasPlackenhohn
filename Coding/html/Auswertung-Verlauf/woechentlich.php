@@ -8,8 +8,6 @@
   <title>Projekt im Modul Entwicklungsprojekt</title>
   <link rel="stylesheet" href="/css/verlauf.css">
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/jquery-1.11.1.min.js"></script>
-  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script> 
 
 </head>
 
@@ -66,20 +64,20 @@
 
     <div class="auswertung">
 
-        <h2>Monatlicher Verlauf</h2>
-        <h3 style="color: rgb(126, 210, 212);">Okt 2020 - Feb 2021</h3>
+        <h2>Wöchentlicher Verlauf</h2>
+        <h3 style="color: rgb(226, 139, 183);">15.02.2021 - 21.02.2021</h3>
 
-        <div id="chartContainer" style="height:300px; width:50%; border:1px solid #E65858;border-radius:4px;"></div>
-        <button id="button">Add DataPoints</button>
+        <div id="chartWeekly" style="height:300px; width:50%; border:1px solid #E65858;border-radius:4px;"></div>
         <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
 
-        <p>In der Umfrage werden die Antworten mit 1-3 Punkten bewertet. 3 steht für sehr gut, 2 steht für gut und 1 für schlecht. Hat der Nutzer alle Fragen beantwortet,
-            werden alle Punkte zusammengezählt. Das Ergebnis wird durch die Anzahl der Fragen dividiert. Dadurch ergibt sich der Durchschnitt (das Stresslevel) für einen Monat.
-        </p>
-
-        <div id="hier"></div>
 
     </div>
+
+    <footer>
+        <div class="footer">
+            <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
+          </div>
+    </footer>
 
     <?php
     $host = "localhost";
@@ -99,17 +97,17 @@
 
     //mysqli_select_db($dbname, $conn);
 
-    $query = "SELECT * FROM umfrage where umfrageId = '4' "; //+1
+    $query = "SELECT * FROM umfragewoche where umfrageID = '9' "; //+1
 
     $result = $conn -> query($query);
     $row = $result->fetch_array(MYSQLI_ASSOC);
-    printf ("%s %s %s %s %s %s %s<br>", $row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
+    printf ("%s %s %s <br>",$row["morgens1"], $row["morgens2"], $row["abends"]);
 
 
-    $array = array($row["frage1"], $row["frage2"], $row["frage3"], $row["frage4"], $row["frage5"], $row["frage6"], $row["frage7"]);
+    $array = array($row["morgens1"], $row["morgens2"], $row["abends"]);
 
     $summe = array_sum($array);
-    $avg = $summe/7;
+    $avg = $summe/3;
 
     echo "summe: " . $summe . "<br>";
     echo "Durchschnitt: " . $avg . "\n";
@@ -132,70 +130,43 @@
 
     ?>
 
-    <script type="text/javascript">
-
-    /*https://canvasjs.com/html5-javascript-spline-chart/*/
-    var avg = <?php echo $avg ?>;
-    var test = avg;
-    window.onload = function () {
-            var chart = new CanvasJS.Chart("chartContainer",
-            {
-                axisY: {
-                gridThickness: 0.2,
-                stripLines: [{
-                    value: 1.5,
-                    label: "gut"
-                }],        
-            },
-                data: [
-                {
-                    type: "line",
-                    lineColor:"black",
-            
-                    dataPoints: [
-                    { x: new Date(2020, 09, 1), y: 0.8, color:"#FF0000", },
-                    { x: new Date(2020, 10, 1), y: 1, color:"#FF0000" },
-                    { x: new Date(2020, 11, 1), y: 1.5, color:"#880000"},
-                    { x: new Date(2021, 00, 1), y: 0.2, color:"#880000", indexLabel: "\u2193 lowest",markerColor: "#FF0000", markerType: "cross" },
-                    { x: new Date(2021, 01, 1), y: 2, color:"#008800"},
-                    { x: new Date(2021, 02, 1), y: 2.7, color:"#00FF00",  indexLabel: "\u2191 highest",markerColor: "#00ff00", markerType: "triangle"},
-                    { x: new Date(2021, 03, 1), y: test, color:"#00FF00" }
-                    ]
-                }
-                ]
-            });
+<script type="text/javascript">
+/*https://canvasjs.com/html5-javascript-spline-chart/*/
+      
+      window.onload = function () {
+        var avg = <?php echo $avg ?>;
+        var test = avg;
+          var chart = new CanvasJS.Chart("chartWeekly",
+          {
+            axisY: {
+            gridThickness: 0.2,
+            stripLines: [{
+                value: 2,
+                label: "gut"
+            }],        
+        },
+             data: [
+             {
+                type: "line",
+                lineColor: "black",
         
-            chart.render();
-
-            /*https://canvasjs.com/docs/charts/methods/dataseries/addto/*/ 
-            
-            document.getElementById("button").addEventListener("click", function(){
-                chart.data[0].addTo("dataPoints", { x: new Date(2021, 04, 1), y: 2.1, color:"#00FF00"})
-                }); 
-            }
-
-
-
-    // boolean outputs "" if false, "1" if true
-    var bool = "<?php echo $avg ?>"; 
-
-    document.getElementById("hier").innerHTML  = bool;
-
-    </script>
-
-
-  <!--<footer>
-        <div class="footer">
-            <p>&copy; Projekt im Modul Entwicklungsprojekt präsentiert von Kimberly Plackenhohn und Eda Serttas</p>
-          </div>
-    </footer>---->  
+                dataPoints: [
+                { x: new Date(2021, 01, 15), y: 1.6, color:"#880000"},
+                { x: new Date(2021, 01, 16), y: 1.4, color:"#880000" },
+                { x: new Date(2021, 01, 17), y: 0.6, indexLabel: "\u2193 lowest",markerColor: "red", markerType: "cross" },
+                { x: new Date(2021, 01, 18), y: 1.7, color:"#880000" },
+                { x: new Date(2021, 01, 19), y: 2.2, color:"#008800"},
+                { x: new Date(2021, 01, 20), y: 3.5,  indexLabel: "\u2191 highest",markerColor: "#00ff00", markerType: "triangle"},
+                { x: new Date(2021, 01, 21), y: test, color:"#00FF00" }
+                ]
+             }
+            ]
+          });
+      
+          chart.render();
+        }
+</script>
 
 </body>
-
     <script language="javascript" type="text/javascript" src="/js/slide-down-menu.js"></script>
-    <script language="javascript" type="text/javascript" src="/js/diagramm.js"></script>
- 
-
-
-
 </html>

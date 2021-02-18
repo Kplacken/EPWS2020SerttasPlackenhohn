@@ -534,7 +534,7 @@ li.tabelle_überschrift::before, li.tab::before {
 	font-size: 15px;
 }
 
-.support, .morgens, .abends{
+.support{
 	margin-left: 60px;
 	border: 1px solid black;
 	padding: 20px;
@@ -710,6 +710,7 @@ ul{
    .p{
 	text-align:center;
    }
+
 
    /*--------------Dropdown https://www.w3schools.com/css/css_dropdowns.asp--------------------*/
 
@@ -998,3 +999,7 @@ input.inp_pass{
 .tabelle_wasser{
 	margin-bottom: 10px;
 }
+
+
+
+

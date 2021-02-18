@@ -28,81 +28,87 @@
         </div>
     </header>
 
-        <div class="header2">
-            <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-            <a class="header-menu_1" href="/Homepage.html">Startseite</a>
-            <div class="dropdown">
-            <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+       
+    <div class="header2">
+        <span class="scal" style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+        <a class="header-menu_1" href="/Homepage.php">Startseite</a>
+        <div class="dropdown">
+        <a class="header-menu" href="/Entspannen.html">Entspannen</a>
+        <div class="dropdown_content">
+            <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
+            <p class="dropdown_text_nichts">Übungen</p>
+            <a href="./html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
+            <a href="./html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
+            <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
+            <a href="./html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+        </div>
+        </div>
+        <div class="dropdown">
+            <a class="header-menu" href="/Verlauf.html">Verlauf</a>
             <div class="dropdown_content">
-                <a class="dropdown_text" href="Entspannen.html"><p>Zum Entspannen</p></a>
-                <p class="dropdown_text_nichts">Übungen</p>
-                <a href="./html/Übungen/atemübungen.html"><p class="dropdown_text_übung">Atemübungen</p></a>
-                <a href="./html/Übungen/morgendliches_stretching.html"><p class="dropdown_text_übung">Morgendliches Stretching</p></a>
-                <a href="./html/Übungen/dehnungen_vor_dem_zubettgehen.html"><p class="dropdown_text_übung">Dehnung vor dem Zubettgehen</p></a>
-                <a href="./html/Übungen/dehnung_von_nacken&schultern.html"><p class="dropdown_text_übung">Dehnung von Nacken und Schultern</p></a>
+                <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
+                <a href="./html/Auswertung-Verlauf/trinkverhalten.html"><p class="dropdown_text_übung">Trinkverhalten</p></a>
+                <a href="./html/Auswertung-Verlauf/woechentlich.php"><p class="dropdown_text_übung">Wöchentlicher Verlauf</p></a>
+                <a href="./html/Auswertung-Verlauf/monatlich.php"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
+                <p class="dropdown_text_nichts">Befragung</p>
+                <a href="./html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
             </div>
             </div>
             <div class="dropdown">
-                <a class="header-menu" href="/Verlauf.html">Verlauf</a>
-                <div class="dropdown_content">
-                    <a class="dropdown_text" href="/Verlauf.html"><p>Zum Verlauf</p></a>
-                    <a href="./html/Auswertung-Verlauf/trinkverhalten.html"><p class="dropdown_text_übung">Trinkverhalten</p></a>
-                    <a href="./html/Auswertung-Verlauf/woechentlich.html"><p class="dropdown_text_übung">Wöchentlicher Verlauf</p></a>
-                    <a href="./html/Auswertung-Verlauf/monatlich.html"><p class="dropdown_text_übung">Monatlicher Verlauf</p></a>
-                    <p class="dropdown_text_nichts">Befragung</p>
-                    <a href="./html/Umfrage/Monatliche-Umfrage.html"><p class="dropdown_text_übung">Monatliche Umfrage</p></a>
-                </div>
-                </div>
-                <div class="dropdown">
-            <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
-        </div>
-        </div>
+        <a class="header-menu" href="/Soforthilfe.html">Soforthilfe</a>
+    </div>
+    </div>
 
-    <img src="/Bilder/startseite1.jpg" alt="Dehnen" class="grafik">
-    <br>
+<img src="/Bilder/startseite1.jpg" alt="Dehnen" class="grafik">
+<br>
 
-   
-    <details>
-        <summary>Tägliche Befragung</summary>
-        <p class="p">Um dein Stresslevel einschätzen zu können, ist es hilfreich zu wissen, wie es dir nach dem aufstehen, sowie vor dem schlafen geht. Dafür wählst du nach dem aufstehen die Smileys, sowie die Frage mit ja/nein, bei “Morgens” aus und vor dem schlafen wählst du die Smileys bei “Abends” aus.</p>
-        <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
-    </details>
 
-  <!--  <h2 class="befragung">Tägliche Befragung</h2>-->
-    <form class="morgens" style="background-color: rgb(238, 230, 224);">
-        <fieldset>    
- <!--   <div class="befragung">-->
-            <h3>Bitte Morgens ausfüllen:</h3>
+<details>
+    <summary>Tägliche Befragung</summary>
+    <p class="p">Um dein Stresslevel einschätzen zu können, ist es hilfreich zu wissen, wie es dir nach dem aufstehen, sowie vor dem schlafen geht. Dafür wählst du nach dem aufstehen die Smileys, sowie die Frage mit ja/nein, bei “Morgens” aus und vor dem schlafen wählst du die Smileys bei “Abends” aus.</p>
+    <p class="p">Am Ende jeder Woche kannst du dein Stresslevel unter Verlauf verfolgen.</p>
+</details>
 
-            <h4>Wie hast du die Nacht geschlafen?</h4>
-            <p class="sternebewertung">
-                <input type="radio" id="stern5" name="bewertung" value="5"><label for="stern5" title="sehr gut"></label>
-                <input type="radio" id="stern4" name="bewertung" value="4"><label for="stern4" title="gut"></label>
-                <input type="radio" id="stern3" name="bewertung" value="3"><label for="stern3" title="in Ordnung"></label>
-                <input type="radio" id="stern2" name="bewertung" value="2"><label for="stern2" title="schlecht"></label>
-                <input type="radio" id="stern1" name="bewertung" value="1"><label for="stern1" title="sehr schlecht"></label>
-            </p>
-        <br><br>
-            <h4 style="clear:left">Fühlst du dich ausgeschlafen? </h4>
-            <input type="radio" name="wert" value="ja">ja<br>
-            <input type="radio" name="wert" value="nein">nein<br><br>
-        </fieldset>
-    </form><br>
+<!--  <h2 class="befragung">Tägliche Befragung</h2>-->
 
-    <form class="abends" style="background-color: rgb(238, 230, 224);">
-        <fieldset>  
-            <h3>Bitte Abends ausfüllen:</h3>
-            <h4>Wie anstrengend war dein Tag?</h4>
-            <p class="sternebewertung">
-                <input type="radio" id="st5" name="bewertung" value="5"><label for="st5" title="sehr gut"></label>
-                <input type="radio" id="st4" name="bewertung" value="4"><label for="st4" title="gut"></label>
-                <input type="radio" id="st3" name="bewertung" value="3"><label for="st3" title="in Ordnung"></label>
-                <input type="radio" id="st2" name="bewertung" value="2"><label for="st2" title="schlecht"></label>
-                <input type="radio" id="st1" name="bewertung" value="1"><label for="st1" title="sehr schlecht"></label>
-            </p>
-        </fieldset>
-    </form><br><br>
+<form class="morgens" style="background-color: rgb(238, 230, 224);">
+    <fieldset>    
+
+        <h3>Bitte Morgens ausfüllen:</h3>
+
+        <h4>Wie hast du die Nacht geschlafen?</h4>
+        <p class="sternebewertung">
+            <input type="radio" id="stern5" name="morgens1" value="5"><label for="stern5" title="sehr gut"></label>
+            <input type="radio" id="stern4" name="morgens1" value="4"><label for="stern4" title="gut"></label>
+            <input type="radio" id="stern3" name="morgens1" value="3"><label for="stern3" title="in Ordnung"></label>
+            <input type="radio" id="stern2" name="morgens1" value="2"><label for="stern2" title="schlecht"></label>
+            <input type="radio" id="stern1" name="morgens1" value="1"><label for="stern1" title="sehr schlecht"></label>
+        </p>
+    <br><br>
+        <h4 style="clear:left">Fühlst du dich ausgeschlafen? </h4>
+        <input type="radio" name="morgens2" value="4">ja<br>
+        <input type="radio" name="morgens2" value="2">nein<br><br>
+    </fieldset>
+</form><br>
+
+<form class="abends" style="background-color: rgb(238, 230, 224);">
+    <fieldset>  
+        <h3>Bitte Abends ausfüllen:</h3>
+        <h4>Wie anstrengend war dein Tag?</h4>
+        <p class="sternebewertung">
+            <input type="radio" id="st5" name="abends" value="5"><label for="st5" title="sehr gut"></label>
+            <input type="radio" id="st4" name="abends" value="4"><label for="st4" title="gut"></label>
+            <input type="radio" id="st3" name="abends" value="3"><label for="st3" title="in Ordnung"></label>
+            <input type="radio" id="st2" name="abends" value="2"><label for="st2" title="schlecht"></label>
+            <input type="radio" id="st1" name="abends" value="1"><label for="st1" title="sehr schlecht"></label>
+        </p>
+    </fieldset>
+    <button id="add-btn" type="submit" name="action" value="Senden">Abschicken</button>
+</form><br><br>
+</form>
 <hr>
+
+
 
     <details>
         <summary>Wasser Angabe</summary>

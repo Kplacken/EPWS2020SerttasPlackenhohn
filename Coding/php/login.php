@@ -27,7 +27,7 @@ if(isset($_POST['send']))
         {
             $query->fetch();
             $_SESSION['user_id'] = $user_id;
-            header('location: Homepage.html');
+            header('location: Homepage.php');
             exit();
         }
         else
