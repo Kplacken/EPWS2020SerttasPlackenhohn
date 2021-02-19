@@ -43,7 +43,7 @@ function alertFunc() {
 }
 
 
-var myVar = setInterval(myFunction, 10800000);
+var myVar = setInterval(myFunction, 5000);
 
 function myFunction1() {
   myVar2 = clearInterval(myVar)
